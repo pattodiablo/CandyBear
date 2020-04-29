@@ -691,14 +691,13 @@
                         "file": "WebContent/assets/pack.json",
                         "section": "animations",
                         "asset": "atlas4",
-                        "sprite": "BigBtnAnim instancia 10000"
+                        "sprite": "ovenCooking0000"
                       },
                       "info": {
                         "editorName": "bigBtn",
-                        "editorField": true,
                         "name": "bigPot",
-                        "x": 405,
-                        "y": 522
+                        "x": 404,
+                        "y": 541
                       }
                     }
                   ]
