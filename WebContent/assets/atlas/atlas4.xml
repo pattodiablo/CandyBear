@@ -47,287 +47,288 @@
 	<SubTexture name="BagDone0042" x="3327" y="149" width="173" height="145"/>
 	<SubTexture name="BagDone0043" x="3502" y="149" width="173" height="145"/>
 	<SubTexture name="BagDone0044" x="3677" y="149" width="173" height="145"/>
-	<SubTexture name="BigBtnAnim instancia 10000" x="3852" y="149" width="65" height="64" pivotX="63.6" pivotY="31.85"/>
-	<SubTexture name="BigBtnAnim instancia 10001" x="3919" y="149" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10002" x="3986" y="149" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10003" x="2" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10004" x="69" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10005" x="136" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10006" x="203" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10007" x="270" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10008" x="337" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10009" x="404" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10010" x="471" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10011" x="538" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10012" x="605" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10013" x="672" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10014" x="739" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10015" x="806" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10016" x="873" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10017" x="940" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10018" x="1007" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10019" x="1074" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10020" x="1141" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10021" x="1208" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10022" x="1275" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10023" x="1342" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10024" x="1409" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10025" x="1476" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10026" x="1543" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10027" x="1610" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10028" x="1677" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10029" x="1744" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10030" x="1811" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10031" x="1878" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10032" x="1945" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10033" x="2012" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10034" x="2079" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10035" x="2146" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10036" x="2213" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10037" x="2280" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10038" x="2347" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10039" x="2414" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10040" x="2481" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10041" x="2548" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10042" x="2615" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10043" x="2682" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10044" x="2749" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10045" x="2816" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10046" x="2883" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10047" x="2950" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10048" x="3017" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10049" x="3084" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10050" x="3151" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10051" x="3218" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10052" x="3285" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10053" x="3352" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10054" x="3419" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10055" x="3486" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10056" x="3553" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10057" x="3620" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10058" x="3687" y="296" width="65" height="64"/>
-	<SubTexture name="BigBtnAnim instancia 10059" x="3754" y="296" width="65" height="64"/>
-	<SubTexture name="ascensor0000" x="3821" y="296" width="119" height="124" pivotX="58.8" pivotY="61.7"/>
-	<SubTexture name="ascensor0001" x="3942" y="296" width="119" height="124"/>
-	<SubTexture name="ascensor0002" x="2" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0003" x="123" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0004" x="244" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0005" x="365" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0006" x="486" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0007" x="607" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0008" x="728" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0009" x="849" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0010" x="970" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0011" x="1091" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0012" x="1212" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0013" x="1333" y="422" width="119" height="124"/>
-	<SubTexture name="ascensor0014" x="1454" y="422" width="119" height="124"/>
-	<SubTexture name="ascensorClose0000" x="1575" y="422" width="119" height="124" pivotX="58.85" pivotY="61.7"/>
-	<SubTexture name="ascensorClose0001" x="1696" y="422" width="119" height="124"/>
-	<SubTexture name="ascensorClose0002" x="1817" y="422" width="119" height="124"/>
-	<SubTexture name="ascensorClose0003" x="1938" y="422" width="119" height="124"/>
-	<SubTexture name="ascensorClose0004" x="2059" y="422" width="119" height="124"/>
-	<SubTexture name="ascensorClose0005" x="2180" y="422" width="119" height="124"/>
-	<SubTexture name="ascensorClose0006" x="2301" y="422" width="119" height="124"/>
-	<SubTexture name="ascensorClose0007" x="2422" y="422" width="119" height="124"/>
-	<SubTexture name="ascensorClose0008" x="2543" y="422" width="119" height="124"/>
-	<SubTexture name="ascensorClose0009" x="2664" y="422" width="119" height="124"/>
-	<SubTexture name="bagReload0000" x="2785" y="422" width="120" height="129" pivotX="51.35" pivotY="89.15"/>
-	<SubTexture name="bagReload0001" x="2907" y="422" width="120" height="129"/>
-	<SubTexture name="bagReload0002" x="3029" y="422" width="120" height="129"/>
-	<SubTexture name="bagReload0003" x="3151" y="422" width="120" height="129"/>
-	<SubTexture name="bagReload0004" x="3273" y="422" width="120" height="129"/>
-	<SubTexture name="bagReload0005" x="3395" y="422" width="120" height="129"/>
-	<SubTexture name="bananaCooking0000" x="3517" y="422" width="90" height="77" pivotX="74.9" pivotY="45.4"/>
-	<SubTexture name="bananaCooking0001" x="3609" y="422" width="90" height="77"/>
-	<SubTexture name="bananaCooking0002" x="3701" y="422" width="90" height="77"/>
-	<SubTexture name="bananaCooking0003" x="3793" y="422" width="90" height="77"/>
-	<SubTexture name="bananaCooking0004" x="3885" y="422" width="90" height="77"/>
-	<SubTexture name="bananaCooking0005" x="3977" y="422" width="90" height="77"/>
-	<SubTexture name="bananaCooking0006" x="2" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0007" x="94" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0008" x="186" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0009" x="278" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0010" x="370" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0011" x="462" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0012" x="554" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0013" x="646" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0014" x="738" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0015" x="830" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0016" x="922" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0017" x="1014" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0018" x="1106" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0019" x="1198" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0020" x="1290" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0021" x="1382" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0022" x="1474" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0023" x="1566" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0024" x="1658" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0025" x="1750" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0026" x="1842" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0027" x="1934" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0028" x="2026" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0029" x="2118" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0030" x="2210" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0031" x="2302" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0032" x="2394" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0033" x="2486" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0034" x="2578" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0035" x="2670" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0036" x="2762" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0037" x="2854" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0038" x="2946" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0039" x="3038" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0040" x="3130" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0041" x="3222" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0042" x="3314" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0043" x="3406" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0044" x="3498" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0045" x="3590" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0046" x="3682" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0047" x="3774" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0048" x="3866" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0049" x="3958" y="553" width="90" height="77"/>
-	<SubTexture name="bananaCooking0050" x="2" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCooking0051" x="94" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCooking0052" x="186" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCooking0053" x="278" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCooking0054" x="370" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCooking0055" x="462" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCooking0056" x="554" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCooking0057" x="646" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCooking0058" x="738" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCooking0059" x="830" y="632" width="90" height="77"/>
-	<SubTexture name="bananaCookingDone0000" x="922" y="632" width="91" height="77" pivotX="74.9" pivotY="45.4"/>
-	<SubTexture name="bananaCookingDone0001" x="1015" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0002" x="1108" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0003" x="1201" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0004" x="1294" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0005" x="1387" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0006" x="1480" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0007" x="1573" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0008" x="1666" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0009" x="1759" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0010" x="1852" y="632" width="91" height="77"/>
-	<SubTexture name="bananaCookingDone0011" x="1945" y="632" width="91" height="77"/>
-	<SubTexture name="cannon0000" x="2038" y="632" width="54" height="59" pivotX="27.1" pivotY="29.7"/>
-	<SubTexture name="cannon0001" x="2094" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0002" x="2150" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0003" x="2206" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0004" x="2262" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0005" x="2318" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0006" x="2374" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0007" x="2430" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0008" x="2486" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0009" x="2542" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0010" x="2598" y="632" width="54" height="59"/>
-	<SubTexture name="cannon0011" x="2654" y="632" width="54" height="59"/>
-	<SubTexture name="coin0000" x="2710" y="632" width="27" height="27" pivotX="13" pivotY="13.05"/>
-	<SubTexture name="coin0001" x="2739" y="632" width="27" height="27"/>
-	<SubTexture name="coin0002" x="2768" y="632" width="27" height="27"/>
-	<SubTexture name="coin0003" x="2797" y="632" width="27" height="27"/>
-	<SubTexture name="coin0004" x="2826" y="632" width="27" height="27"/>
-	<SubTexture name="coin0005" x="2855" y="632" width="27" height="27"/>
-	<SubTexture name="coin0006" x="2884" y="632" width="27" height="27"/>
-	<SubTexture name="coin0007" x="2913" y="632" width="27" height="27"/>
-	<SubTexture name="coin0008" x="2942" y="632" width="27" height="27"/>
-	<SubTexture name="coin0009" x="2971" y="632" width="27" height="27"/>
-	<SubTexture name="dondePot instancia 10000" x="3000" y="632" width="90" height="78" pivotX="74.9" pivotY="45.4"/>
-	<SubTexture name="dondePot instancia 10001" x="3092" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10002" x="3184" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10003" x="3276" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10004" x="3368" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10005" x="3460" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10006" x="3552" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10007" x="3644" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10008" x="3736" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10009" x="3828" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10010" x="3920" y="632" width="90" height="78"/>
-	<SubTexture name="dondePot instancia 10011" x="2" y="712" width="90" height="78"/>
-	<SubTexture name="elevator0000" x="94" y="712" width="64" height="23" pivotX="29.4" pivotY="7.6"/>
-	<SubTexture name="elevator0001" x="160" y="712" width="64" height="23"/>
-	<SubTexture name="elevator0002" x="226" y="712" width="64" height="23"/>
-	<SubTexture name="elevator0003" x="292" y="712" width="64" height="23"/>
-	<SubTexture name="elevator0004" x="358" y="712" width="64" height="23"/>
-	<SubTexture name="elevator0005" x="424" y="712" width="64" height="23"/>
-	<SubTexture name="elevator0006" x="490" y="712" width="64" height="23"/>
-	<SubTexture name="elevator0007" x="556" y="712" width="64" height="23"/>
-	<SubTexture name="elevator0008" x="622" y="712" width="64" height="23"/>
-	<SubTexture name="elevator0009" x="688" y="712" width="64" height="23"/>
-	<SubTexture name="lemonCooking0000" x="754" y="712" width="90" height="77" pivotX="74.9" pivotY="45.4"/>
-	<SubTexture name="lemonCooking0001" x="846" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0002" x="938" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0003" x="1030" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0004" x="1122" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0005" x="1214" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0006" x="1306" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0007" x="1398" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0008" x="1490" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0009" x="1582" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0010" x="1674" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0011" x="1766" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0012" x="1858" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0013" x="1950" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0014" x="2042" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0015" x="2134" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0016" x="2226" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0017" x="2318" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0018" x="2410" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0019" x="2502" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0020" x="2594" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0021" x="2686" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0022" x="2778" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0023" x="2870" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0024" x="2962" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0025" x="3054" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0026" x="3146" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0027" x="3238" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0028" x="3330" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0029" x="3422" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0030" x="3514" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0031" x="3606" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0032" x="3698" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0033" x="3790" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0034" x="3882" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0035" x="3974" y="712" width="90" height="77"/>
-	<SubTexture name="lemonCooking0036" x="2" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0037" x="94" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0038" x="186" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0039" x="278" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0040" x="370" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0041" x="462" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0042" x="554" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0043" x="646" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0044" x="738" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0045" x="830" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0046" x="922" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0047" x="1014" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0048" x="1106" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0049" x="1198" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0050" x="1290" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0051" x="1382" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0052" x="1474" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0053" x="1566" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0054" x="1658" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0055" x="1750" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0056" x="1842" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0057" x="1934" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0058" x="2026" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCooking0059" x="2118" y="792" width="90" height="77"/>
-	<SubTexture name="lemonCookingDone0000" x="2210" y="792" width="91" height="77" pivotX="74.9" pivotY="45.4"/>
-	<SubTexture name="lemonCookingDone0001" x="2303" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0002" x="2396" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0003" x="2489" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0004" x="2582" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0005" x="2675" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0006" x="2768" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0007" x="2861" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0008" x="2954" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0009" x="3047" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0010" x="3140" y="792" width="91" height="77"/>
-	<SubTexture name="lemonCookingDone0011" x="3233" y="792" width="91" height="77"/>
-	<SubTexture name="ovenCooking0000" x="3326" y="792" width="256" height="172" pivotX="127.55" pivotY="85.15"/>
-	<SubTexture name="ovenCooking0001" x="3584" y="792" width="256" height="172"/>
+	<SubTexture name="BagDone0045" x="3852" y="149" width="173" height="145"/>
+	<SubTexture name="BigBtnAnim instancia 10000" x="4027" y="149" width="65" height="64" pivotX="63.6" pivotY="31.85"/>
+	<SubTexture name="BigBtnAnim instancia 10001" x="2" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10002" x="69" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10003" x="136" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10004" x="203" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10005" x="270" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10006" x="337" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10007" x="404" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10008" x="471" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10009" x="538" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10010" x="605" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10011" x="672" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10012" x="739" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10013" x="806" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10014" x="873" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10015" x="940" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10016" x="1007" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10017" x="1074" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10018" x="1141" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10019" x="1208" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10020" x="1275" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10021" x="1342" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10022" x="1409" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10023" x="1476" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10024" x="1543" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10025" x="1610" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10026" x="1677" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10027" x="1744" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10028" x="1811" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10029" x="1878" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10030" x="1945" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10031" x="2012" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10032" x="2079" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10033" x="2146" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10034" x="2213" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10035" x="2280" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10036" x="2347" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10037" x="2414" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10038" x="2481" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10039" x="2548" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10040" x="2615" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10041" x="2682" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10042" x="2749" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10043" x="2816" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10044" x="2883" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10045" x="2950" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10046" x="3017" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10047" x="3084" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10048" x="3151" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10049" x="3218" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10050" x="3285" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10051" x="3352" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10052" x="3419" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10053" x="3486" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10054" x="3553" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10055" x="3620" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10056" x="3687" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10057" x="3754" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10058" x="3821" y="296" width="65" height="64"/>
+	<SubTexture name="BigBtnAnim instancia 10059" x="3888" y="296" width="65" height="64"/>
+	<SubTexture name="ascensor0000" x="3955" y="296" width="119" height="124" pivotX="58.8" pivotY="61.7"/>
+	<SubTexture name="ascensor0001" x="2" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0002" x="123" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0003" x="244" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0004" x="365" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0005" x="486" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0006" x="607" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0007" x="728" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0008" x="849" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0009" x="970" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0010" x="1091" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0011" x="1212" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0012" x="1333" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0013" x="1454" y="422" width="119" height="124"/>
+	<SubTexture name="ascensor0014" x="1575" y="422" width="119" height="124"/>
+	<SubTexture name="ascensorClose0000" x="1696" y="422" width="119" height="124" pivotX="58.85" pivotY="61.7"/>
+	<SubTexture name="ascensorClose0001" x="1817" y="422" width="119" height="124"/>
+	<SubTexture name="ascensorClose0002" x="1938" y="422" width="119" height="124"/>
+	<SubTexture name="ascensorClose0003" x="2059" y="422" width="119" height="124"/>
+	<SubTexture name="ascensorClose0004" x="2180" y="422" width="119" height="124"/>
+	<SubTexture name="ascensorClose0005" x="2301" y="422" width="119" height="124"/>
+	<SubTexture name="ascensorClose0006" x="2422" y="422" width="119" height="124"/>
+	<SubTexture name="ascensorClose0007" x="2543" y="422" width="119" height="124"/>
+	<SubTexture name="ascensorClose0008" x="2664" y="422" width="119" height="124"/>
+	<SubTexture name="ascensorClose0009" x="2785" y="422" width="119" height="124"/>
+	<SubTexture name="bagReload0000" x="2906" y="422" width="120" height="129" pivotX="51.35" pivotY="89.15"/>
+	<SubTexture name="bagReload0001" x="3028" y="422" width="120" height="129"/>
+	<SubTexture name="bagReload0002" x="3150" y="422" width="120" height="129"/>
+	<SubTexture name="bagReload0003" x="3272" y="422" width="120" height="129"/>
+	<SubTexture name="bagReload0004" x="3394" y="422" width="120" height="129"/>
+	<SubTexture name="bagReload0005" x="3516" y="422" width="120" height="129"/>
+	<SubTexture name="bananaCooking0000" x="3638" y="422" width="90" height="77" pivotX="74.9" pivotY="45.4"/>
+	<SubTexture name="bananaCooking0001" x="3730" y="422" width="90" height="77"/>
+	<SubTexture name="bananaCooking0002" x="3822" y="422" width="90" height="77"/>
+	<SubTexture name="bananaCooking0003" x="3914" y="422" width="90" height="77"/>
+	<SubTexture name="bananaCooking0004" x="2" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0005" x="94" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0006" x="186" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0007" x="278" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0008" x="370" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0009" x="462" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0010" x="554" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0011" x="646" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0012" x="738" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0013" x="830" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0014" x="922" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0015" x="1014" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0016" x="1106" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0017" x="1198" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0018" x="1290" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0019" x="1382" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0020" x="1474" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0021" x="1566" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0022" x="1658" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0023" x="1750" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0024" x="1842" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0025" x="1934" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0026" x="2026" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0027" x="2118" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0028" x="2210" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0029" x="2302" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0030" x="2394" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0031" x="2486" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0032" x="2578" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0033" x="2670" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0034" x="2762" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0035" x="2854" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0036" x="2946" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0037" x="3038" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0038" x="3130" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0039" x="3222" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0040" x="3314" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0041" x="3406" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0042" x="3498" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0043" x="3590" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0044" x="3682" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0045" x="3774" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0046" x="3866" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0047" x="3958" y="553" width="90" height="77"/>
+	<SubTexture name="bananaCooking0048" x="2" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0049" x="94" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0050" x="186" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0051" x="278" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0052" x="370" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0053" x="462" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0054" x="554" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0055" x="646" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0056" x="738" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0057" x="830" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0058" x="922" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCooking0059" x="1014" y="632" width="90" height="77"/>
+	<SubTexture name="bananaCookingDone0000" x="1106" y="632" width="91" height="77" pivotX="74.9" pivotY="45.4"/>
+	<SubTexture name="bananaCookingDone0001" x="1199" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0002" x="1292" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0003" x="1385" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0004" x="1478" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0005" x="1571" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0006" x="1664" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0007" x="1757" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0008" x="1850" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0009" x="1943" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0010" x="2036" y="632" width="91" height="77"/>
+	<SubTexture name="bananaCookingDone0011" x="2129" y="632" width="91" height="77"/>
+	<SubTexture name="cannon0000" x="2222" y="632" width="54" height="59" pivotX="27.1" pivotY="29.7"/>
+	<SubTexture name="cannon0001" x="2278" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0002" x="2334" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0003" x="2390" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0004" x="2446" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0005" x="2502" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0006" x="2558" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0007" x="2614" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0008" x="2670" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0009" x="2726" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0010" x="2782" y="632" width="54" height="59"/>
+	<SubTexture name="cannon0011" x="2838" y="632" width="54" height="59"/>
+	<SubTexture name="coin0000" x="2894" y="632" width="27" height="27" pivotX="13" pivotY="13.05"/>
+	<SubTexture name="coin0001" x="2923" y="632" width="27" height="27"/>
+	<SubTexture name="coin0002" x="2952" y="632" width="27" height="27"/>
+	<SubTexture name="coin0003" x="2981" y="632" width="27" height="27"/>
+	<SubTexture name="coin0004" x="3010" y="632" width="27" height="27"/>
+	<SubTexture name="coin0005" x="3039" y="632" width="27" height="27"/>
+	<SubTexture name="coin0006" x="3068" y="632" width="27" height="27"/>
+	<SubTexture name="coin0007" x="3097" y="632" width="27" height="27"/>
+	<SubTexture name="coin0008" x="3126" y="632" width="27" height="27"/>
+	<SubTexture name="coin0009" x="3155" y="632" width="27" height="27"/>
+	<SubTexture name="dondePot instancia 10000" x="3184" y="632" width="90" height="78" pivotX="74.9" pivotY="45.4"/>
+	<SubTexture name="dondePot instancia 10001" x="3276" y="632" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10002" x="3368" y="632" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10003" x="3460" y="632" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10004" x="3552" y="632" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10005" x="3644" y="632" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10006" x="3736" y="632" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10007" x="3828" y="632" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10008" x="3920" y="632" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10009" x="2" y="712" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10010" x="94" y="712" width="90" height="78"/>
+	<SubTexture name="dondePot instancia 10011" x="186" y="712" width="90" height="78"/>
+	<SubTexture name="elevator0000" x="278" y="712" width="64" height="23" pivotX="29.4" pivotY="7.6"/>
+	<SubTexture name="elevator0001" x="344" y="712" width="64" height="23"/>
+	<SubTexture name="elevator0002" x="410" y="712" width="64" height="23"/>
+	<SubTexture name="elevator0003" x="476" y="712" width="64" height="23"/>
+	<SubTexture name="elevator0004" x="542" y="712" width="64" height="23"/>
+	<SubTexture name="elevator0005" x="608" y="712" width="64" height="23"/>
+	<SubTexture name="elevator0006" x="674" y="712" width="64" height="23"/>
+	<SubTexture name="elevator0007" x="740" y="712" width="64" height="23"/>
+	<SubTexture name="elevator0008" x="806" y="712" width="64" height="23"/>
+	<SubTexture name="elevator0009" x="872" y="712" width="64" height="23"/>
+	<SubTexture name="lemonCooking0000" x="938" y="712" width="90" height="77" pivotX="74.9" pivotY="45.4"/>
+	<SubTexture name="lemonCooking0001" x="1030" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0002" x="1122" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0003" x="1214" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0004" x="1306" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0005" x="1398" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0006" x="1490" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0007" x="1582" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0008" x="1674" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0009" x="1766" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0010" x="1858" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0011" x="1950" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0012" x="2042" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0013" x="2134" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0014" x="2226" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0015" x="2318" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0016" x="2410" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0017" x="2502" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0018" x="2594" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0019" x="2686" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0020" x="2778" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0021" x="2870" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0022" x="2962" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0023" x="3054" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0024" x="3146" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0025" x="3238" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0026" x="3330" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0027" x="3422" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0028" x="3514" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0029" x="3606" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0030" x="3698" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0031" x="3790" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0032" x="3882" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0033" x="3974" y="712" width="90" height="77"/>
+	<SubTexture name="lemonCooking0034" x="2" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0035" x="94" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0036" x="186" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0037" x="278" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0038" x="370" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0039" x="462" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0040" x="554" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0041" x="646" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0042" x="738" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0043" x="830" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0044" x="922" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0045" x="1014" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0046" x="1106" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0047" x="1198" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0048" x="1290" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0049" x="1382" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0050" x="1474" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0051" x="1566" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0052" x="1658" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0053" x="1750" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0054" x="1842" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0055" x="1934" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0056" x="2026" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0057" x="2118" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0058" x="2210" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCooking0059" x="2302" y="792" width="90" height="77"/>
+	<SubTexture name="lemonCookingDone0000" x="2394" y="792" width="91" height="77" pivotX="74.9" pivotY="45.4"/>
+	<SubTexture name="lemonCookingDone0001" x="2487" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0002" x="2580" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0003" x="2673" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0004" x="2766" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0005" x="2859" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0006" x="2952" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0007" x="3045" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0008" x="3138" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0009" x="3231" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0010" x="3324" y="792" width="91" height="77"/>
+	<SubTexture name="lemonCookingDone0011" x="3417" y="792" width="91" height="77"/>
+	<SubTexture name="ovenCooking0000" x="3510" y="792" width="256" height="172" pivotX="127.55" pivotY="85.15"/>
+	<SubTexture name="ovenCooking0001" x="3768" y="792" width="256" height="172"/>
 	<SubTexture name="ovenCooking0002" x="2" y="966" width="256" height="172"/>
 	<SubTexture name="ovenCooking0003" x="260" y="966" width="256" height="172"/>
 	<SubTexture name="ovenCooking0004" x="518" y="966" width="256" height="172"/>
