@@ -702,10 +702,15 @@
       "type": "script",
       "key": "orderItem1",
       "url": "assets/prefabs/orderItem.js"
+    },
+    {
+      "type": "script",
+      "key": "bag",
+      "url": "assets/prefabs/bag.js"
     }
   ],
   "meta": {
-    "generated": "1587480780008",
+    "generated": "1588172201745",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
