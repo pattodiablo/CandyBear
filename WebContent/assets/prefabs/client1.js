@@ -44,6 +44,8 @@ client1.prototype.myCreate = function() {
 	this.orderBG = null;
 	this.waitTime = 20;
 	this.velocidadCliente = this.body.velocity.x;
+	
+	
 }
 client1.prototype.makeAnOrder = function() {
 	
@@ -67,7 +69,7 @@ client1.prototype.makeAnOrder = function() {
 	}, this);
 	
 	this.game.add.existing(this.orderBG);
-	
+	this.game.state.getCurrentState﻿().fBagDone.currentClient = this;
 }
 
 client1.prototype.checkDistance = function() {

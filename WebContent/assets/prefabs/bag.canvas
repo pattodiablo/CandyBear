@@ -18,7 +18,8 @@
       200,
       200
     ],
-    "showGrid": true
+    "showGrid": true,
+    "create_after": "this.myCreate();"
   },
   "stateSettings": {
     "stageBackgroundColor": [
@@ -105,7 +106,9 @@
                 "bagReload0002",
                 "bagReload0003",
                 "bagReload0004",
-                "bagReload0005"
+                "bagReload0005",
+                "BagDone0000",
+                "BagDone0000"
               ]
             }
           ],
