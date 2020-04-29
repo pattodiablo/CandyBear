@@ -37,6 +37,7 @@ orderItem.prototype.myCreate = function() {
 	this.anchor.setTo(0.5,0.5);
 	this.myClientIs='null';
 	this.myOrderFlavor = 'null';
+	this.wichCandy = 'null'
 	
 }
 
@@ -46,49 +47,48 @@ orderItem.prototype.createFlavor = function() {
 	this.game.state.getCurrentState﻿().fOrdersFlavor.add(this);
 	console.log('cual sabor ' + cualSabor )
 	switch (cualSabor){
+	
 	case 1:
-		var wichCandy = this.game.add.sprite(this.x, this.y-3, 'strawberryChocolate', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
+		this.wichCandy = this.game.add.sprite(this.x, this.y-3, 'strawberryChocolate', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
 		break;
 	case 2:
-		var wichCandy = this.game.add.sprite(this.x, this.y-3, 'strawberryChilli', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
+		this.wichCandy = this.game.add.sprite(this.x, this.y-3, 'strawberryChilli', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
 		break;
 	case 3:
-		var wichCandy = this.game.add.sprite(this.x, this.y-3, 'strawberryCherry', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
+		this.wichCandy = this.game.add.sprite(this.x, this.y-3, 'strawberryCherry', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
 		break;
 	case 4:
-		var wichCandy = this.game.add.sprite(this.x, this.y-3, 'lemonChocolate', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
+		this.wichCandy = this.game.add.sprite(this.x, this.y-3, 'lemonChocolate', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
 		break;
 	case 5:
-		var wichCandy = this.game.add.sprite(this.x, this.y-3, 'lemonChilli', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
+		this.wichCandy = this.game.add.sprite(this.x, this.y-3, 'lemonChilli', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
 		break;
 	case 6:
-		var wichCandy = this.game.add.sprite(this.x, this.y-3, 'lemonCherry', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
+		this.wichCandy = this.game.add.sprite(this.x, this.y-3, 'lemonCherry', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
 		break;
 	case 7:
-		var wichCandy = this.game.add.sprite(this.x, this.y-3, 'bannanaChocolate', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
+		this.wichCandy = this.game.add.sprite(this.x, this.y-3, 'bannanaChocolate', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
 		break;
 	case 8:
-		var wichCandy = this.game.add.sprite(this.x, this.y-3, 'bannanaChilli', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
+		this.wichCandy = this.game.add.sprite(this.x, this.y-3, 'bannanaChilli', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
 		break;
 	case 9:
-		var wichCandy = this.game.add.sprite(this.x, this.y-3, 'bannanaCherry', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
+		this.wichCandy = this.game.add.sprite(this.x, this.y-3, 'bannanaCherry', null,this.game.state.getCurrentState﻿().fOrdersFlavor);
 		break;
 	
 	
 	
 	}
 	
-	this.myOrderFlavor = wichCandy;
-	this.saborCreado=wichCandy.key;
-	wichCandy.scale.setTo(0.7);
-	wichCandy.anchor.setTo(0.5);
+	this.myOrderFlavor = this.wichCandy;
+	this.saborCreado=this.wichCandy.key;
+
+	this.wichCandy.scale.setTo(0.7);
+	this.wichCandy.anchor.setTo(0.5);
 	this.z=0;
-	wichCandy.z=10;
+	this.wichCandy.z=10;
 	
 }
 
-orderItem.prototype.update = function() {
-	
-}
 
 
