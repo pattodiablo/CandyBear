@@ -985,13 +985,20 @@
                       }
                     },
                     {
-                      "type": "image",
-                      "id": "65258bab-e367-4d9b-a78a-2f53472b6b30",
-                      "asset": "26",
+                      "type": "prefab",
+                      "prefab": "4",
+                      "id": "c2bf64a4-d360-4719-a118-7702677eadfe",
+                      "asset-ref": {
+                        "file": "WebContent/assets/pack.json",
+                        "section": "animations",
+                        "asset": "atlas4",
+                        "sprite": "BagDone0000"
+                      },
                       "info": {
-                        "editorName": "rdyBag",
-                        "x": 625,
-                        "y": 282
+                        "editorName": "BagDone",
+                        "editorField": true,
+                        "x": 598,
+                        "y": 266
                       }
                     }
                   ]
@@ -1010,7 +1017,7 @@
               {
                 "type": "image",
                 "id": "ddc936b9-aebc-4e0d-9c9c-9eb0a7b6b6d4",
-                "asset": "27",
+                "asset": "26",
                 "info": {
                   "editorName": "OpenStoreBtn",
                   "editorField": true,
@@ -1021,7 +1028,7 @@
               {
                 "type": "image",
                 "id": "8e642475-4197-473a-ab9d-e0c73cf8bd98",
-                "asset": "28",
+                "asset": "27",
                 "info": {
                   "editorName": "DenyOrderBtn",
                   "editorField": true,
@@ -1032,7 +1039,7 @@
               {
                 "type": "image",
                 "id": "6a8c93da-5ad4-4ccc-b5ef-e4788c03e7bd",
-                "asset": "29",
+                "asset": "28",
                 "info": {
                   "editorName": "CloseStoreBtn",
                   "editorField": true,
@@ -1043,7 +1050,7 @@
               {
                 "type": "image",
                 "id": "9dda1b99-6fb7-463d-bb96-e7e71d1c3f46",
-                "asset": "30",
+                "asset": "29",
                 "info": {
                   "editorName": "exitHouseBtn",
                   "editorField": true,
@@ -1058,7 +1065,7 @@
         {
           "type": "image",
           "id": "564a72fa-89f2-4674-af7d-3ad7c91f98ce",
-          "asset": "31",
+          "asset": "30",
           "info": {
             "editorName": "elevatorInn",
             "editorField": true,
@@ -1071,7 +1078,7 @@
         {
           "type": "image",
           "id": "dd59bbbc-8112-4552-a5c0-b5e0e80bab84",
-          "asset": "32",
+          "asset": "31",
           "info": {
             "editorName": "elevatorOut",
             "editorField": true,
@@ -1084,7 +1091,7 @@
         {
           "type": "image",
           "id": "d3f0b988-32db-4244-a568-2a9e58c003e0",
-          "asset": "33",
+          "asset": "32",
           "info": {
             "editorName": "changeDirBtn",
             "editorPick": false,
@@ -1097,7 +1104,7 @@
         {
           "type": "atlas-sprite",
           "id": "f39e1c6e-191e-4df6-a49b-f11acf2a3e2c",
-          "asset": "34",
+          "asset": "33",
           "info": {
             "editorName": "coin",
             "x": 502,
@@ -1150,7 +1157,7 @@
               {
                 "type": "image",
                 "id": "835def20-9e36-4c1e-9833-0b1f48ffc541",
-                "asset": "35",
+                "asset": "34",
                 "info": {
                   "editorName": "cartel",
                   "x": -8,
@@ -1187,7 +1194,7 @@
         {
           "type": "image",
           "id": "d6fc3bca-525a-4f6e-ae05-93c99dcdde03",
-          "asset": "36",
+          "asset": "35",
           "info": {
             "editorName": "greatJob",
             "editorField": true,
@@ -1198,7 +1205,7 @@
         {
           "type": "image",
           "id": "80cc45c0-2ea9-4e07-a7c2-c82738dd06b7",
-          "asset": "37",
+          "asset": "36",
           "info": {
             "editorName": "welcome",
             "editorField": true,
@@ -1223,7 +1230,7 @@
         {
           "type": "atlas-sprite",
           "id": "ceda13f3-b952-47ec-894d-85c7c33523f5",
-          "asset": "38",
+          "asset": "37",
           "info": {
             "editorName": "cliente",
             "x": 420,
@@ -1371,65 +1378,60 @@
     "26": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "rdyBag"
+      "asset": "OpenStoreBtn"
     },
     "27": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "OpenStoreBtn"
+      "asset": "DenyOrderBtn"
     },
     "28": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "DenyOrderBtn"
+      "asset": "CloseStoreBtn"
     },
     "29": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "CloseStoreBtn"
+      "asset": "exitHouseBtn"
     },
     "30": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "exitHouseBtn"
+      "asset": "elevatorInn"
     },
     "31": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "elevatorInn"
+      "asset": "elevatorOut"
     },
     "32": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "elevatorOut"
-    },
-    "33": {
-      "file": "WebContent/assets/pack.json",
-      "section": "graphics",
       "asset": "changeDirBtn"
     },
-    "34": {
+    "33": {
       "file": "WebContent/assets/pack.json",
       "section": "animations",
       "asset": "atlas4",
       "sprite": "coin0000"
     },
-    "35": {
+    "34": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "cartel"
     },
-    "36": {
+    "35": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "greatJob"
     },
-    "37": {
+    "36": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "welcome"
     },
-    "38": {
+    "37": {
       "file": "WebContent/assets/pack.json",
       "section": "animations",
       "asset": "atlas5",
@@ -1440,6 +1442,7 @@
     "0": "WebContent/assets/prefabs/ascensor.canvas",
     "1": "WebContent/assets/prefabs/player.canvas",
     "2": "WebContent/assets/prefabs/smallPot.canvas",
-    "3": "WebContent/assets/prefabs/bigBtn.canvas"
+    "3": "WebContent/assets/prefabs/bigBtn.canvas",
+    "4": "WebContent/assets/prefabs/bag.canvas"
   }
 }
