@@ -1058,6 +1058,23 @@
                   "y": 652,
                   "fixedToCamera": true
                 }
+              },
+              {
+                "type": "prefab",
+                "prefab": "5",
+                "id": "5f1f3a3c-417b-40b6-bc6b-9ad1627328e8",
+                "asset-ref": {
+                  "file": "WebContent/assets/pack.json",
+                  "section": "animations",
+                  "asset": "atlas6",
+                  "sprite": "arrows instancia 10000"
+                },
+                "info": {
+                  "editorName": "arrows_instancia_",
+                  "editorField": true,
+                  "x": 653,
+                  "y": 276
+                }
               }
             ]
           }
@@ -1443,6 +1460,7 @@
     "1": "WebContent/assets/prefabs/player.canvas",
     "2": "WebContent/assets/prefabs/smallPot.canvas",
     "3": "WebContent/assets/prefabs/bigBtn.canvas",
-    "4": "WebContent/assets/prefabs/bag.canvas"
+    "4": "WebContent/assets/prefabs/bag.canvas",
+    "5": "WebContent/assets/prefabs/arrows.canvas"
   }
 }

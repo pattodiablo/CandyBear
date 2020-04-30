@@ -714,10 +714,15 @@
       "textureURL": "assets/atlas/atlas6.png",
       "atlasURL": "assets/atlas/atlas6.xml",
       "format": "TEXTURE_ATLAS_XML_STARLING"
+    },
+    {
+      "type": "script",
+      "key": "arrows",
+      "url": "assets/prefabs/arrows.js"
     }
   ],
   "meta": {
-    "generated": "1588254105556",
+    "generated": "1588254203483",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
