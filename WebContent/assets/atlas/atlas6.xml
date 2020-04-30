@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="atlas6.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="arrows instancia 10000" x="2" y="2" width="27" height="46" pivotX="13" pivotY="27.45"/>
+	<SubTexture name="arrows instancia 10001" x="31" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10002" x="60" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10003" x="89" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10004" x="118" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10005" x="147" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10006" x="176" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10007" x="205" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10008" x="234" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10009" x="263" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10010" x="292" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10011" x="321" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10012" x="350" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10013" x="379" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10014" x="408" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10015" x="437" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10016" x="466" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10017" x="495" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10018" x="524" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10019" x="553" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10020" x="582" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10021" x="611" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10022" x="640" y="2" width="27" height="46"/>
+	<SubTexture name="arrows instancia 10023" x="669" y="2" width="27" height="46"/>
+</TextureAtlas>
