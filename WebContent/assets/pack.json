@@ -707,10 +707,17 @@
       "type": "script",
       "key": "bag",
       "url": "assets/prefabs/bag.js"
+    },
+    {
+      "type": "atlas",
+      "key": "atlas6",
+      "textureURL": "assets/atlas/atlas6.png",
+      "atlasURL": "assets/atlas/atlas6.xml",
+      "format": "TEXTURE_ATLAS_XML_STARLING"
     }
   ],
   "meta": {
-    "generated": "1588172201745",
+    "generated": "1588254105556",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
