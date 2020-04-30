@@ -64,6 +64,7 @@ this.game.physics.arcade.collide(this, this.game.state.getCurrentState﻿().fPla
 
 if(this.x>860){
 console.log('destroying');
+this.game.state.getCurrentState﻿().zombiesPorEliminar--;
 if(this.game.state.getCurrentState﻿().zombiesPorEliminar<=0){
 	console.log('ultimoZombieEliminado');
 	this.game.state.getCurrentState﻿().ultimoZobieEliminado = true;

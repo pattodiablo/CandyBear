@@ -598,6 +598,17 @@
       "key": "letreroSuperior",
       "url": "assets/images/letreroSuperior.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "lifeBar",
+      "url": "assets/images/lifeBar.png",
+      "overwrite": false
+    },
+    {
+      "type": "script",
+      "key": "lifeBar1",
+      "url": "assets/prefabs/lifeBar.js"
     }
   ],
   "Fonts": [{
@@ -728,7 +739,7 @@
     }
   ],
   "meta": {
-    "generated": "1588255435112",
+    "generated": "1588278354560",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
