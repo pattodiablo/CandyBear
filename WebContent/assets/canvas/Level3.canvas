@@ -1285,7 +1285,8 @@
                   "x": 245,
                   "y": 105,
                   "text": "Last client attended",
-                  "style.fill": "#ffffff"
+                  "style.fill": "#ffffff",
+                  "style.align": "CENTER"
                 }
               }
             ]
