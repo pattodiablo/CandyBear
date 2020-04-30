@@ -1256,6 +1256,40 @@
             "scale.y": 0.5,
             "fixedToCamera": true
           }
+        },
+        {
+          "type": "group",
+          "id": "418ddbc3-7e26-4a2f-9fea-0fb16328a46e",
+          "info": {
+            "editorName": "upperBanner",
+            "editorField": true,
+            "y": -139,
+            "setAll": [],
+            "children": [
+              {
+                "type": "image",
+                "id": "c457bbba-752b-4251-9e33-59abb02ba2b6",
+                "asset": "38",
+                "info": {
+                  "editorName": "letreroSuperior",
+                  "x": 211,
+                  "y": -3
+                }
+              },
+              {
+                "type": "text",
+                "id": "61a788ca-b48a-491f-a7dc-057679957dc3",
+                "info": {
+                  "editorName": "upBannerTExt",
+                  "editorField": true,
+                  "x": 245,
+                  "y": 105,
+                  "text": "Last client attended",
+                  "style.fill": "#ffffff"
+                }
+              }
+            ]
+          }
         }
       ]
     }
@@ -1453,6 +1487,11 @@
       "section": "animations",
       "asset": "atlas5",
       "sprite": "cliente10000"
+    },
+    "38": {
+      "file": "WebContent/assets/pack.json",
+      "section": "graphics",
+      "asset": "letreroSuperior"
     }
   },
   "prefab-table": {

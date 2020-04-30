@@ -592,6 +592,12 @@
       "key": "chocolateJar",
       "url": "assets/images/chocolateJar.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "letreroSuperior",
+      "url": "assets/images/letreroSuperior.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -722,7 +728,7 @@
     }
   ],
   "meta": {
-    "generated": "1588254203483",
+    "generated": "1588255435112",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
