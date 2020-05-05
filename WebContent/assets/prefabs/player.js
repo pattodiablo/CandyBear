@@ -48,13 +48,20 @@ player.prototype.constructor = player;
 /* --- end generated code --- */
 // -- user code here --
 player.prototype.afterCreate = function(_anim_shooting) {
+	this.myWeapons = 0;
 	this.myCannons = 0;
 	this.myCoins = 60;
 	this.hasPistol =  false;
 	this.animations.play('idle');	
 	_anim_shooting.onLoop.add(this.animationStopped, this);
 	this.life = 200;
-	
+	this.playerBall = this.game.add.sprite(this.x,this.y,'playerBall',null);
+	this.playerBall.anchor.set(0.5, 0.5);
+	this.ballMode =  false;
+    this.game.physics.arcade.enable(this.playerBall);
+    this.enableObstacleCollide = true;
+	this.playerBall.alpha = 0;
+   // this.playerBall.body.gravity.y = 800.0;
 	
 };
 
@@ -62,3 +69,26 @@ player.prototype.animationStopped = function(sprite, animation) {
 
 	this.game.state.getCurrentState﻿().shoot();
 };
+player.prototype.ballModeSwitch = function() {
+	
+	if(this.ballMode){
+		this.alpha=0;
+		this.playerBall.alpha = 100;
+		 this.enableObstacleCollide = false;
+	}else{
+		
+		this.alpha=100;
+		this.playerBall.alpha = 0;
+		 this.enableObstacleCollide = true;
+	}
+}
+player.prototype.update = function() {
+
+	
+	this.playerBall.x=this.x;
+	this.playerBall.y=this.y+13;
+	this.playerBall.body.angularVelocity=900*Math.sign(this.body.velocity.x);
+	
+	//this.game.physics.arcade.collide(this.playerBall , this.game.state.getCurrentState﻿().fPlatforms);
+};
+
