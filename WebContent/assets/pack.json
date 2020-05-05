@@ -615,6 +615,12 @@
       "key": "playerBall",
       "url": "assets/images/playerBall.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "upgradeCannon",
+      "url": "assets/images/upgradeCannon.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -745,7 +751,7 @@
     }
   ],
   "meta": {
-    "generated": "1588349206741",
+    "generated": "1588708425752",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
