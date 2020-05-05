@@ -38,7 +38,8 @@ cannon.prototype.constructor = cannon;
 // -- user code here --
 
 cannon.prototype.myCreate = function() {
-	
+	this.cannonlevel = 1;
+	this.upgradeCost = 30*this.cannonlevel;
 	this.weapon = this.game.add.weapon(40, 'bullet');
 	
     this.weapon.setBulletFrames(0, 80, true);

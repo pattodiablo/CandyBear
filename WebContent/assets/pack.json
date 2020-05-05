@@ -609,6 +609,12 @@
       "type": "script",
       "key": "lifeBar1",
       "url": "assets/prefabs/lifeBar.js"
+    },
+    {
+      "type": "image",
+      "key": "playerBall",
+      "url": "assets/images/playerBall.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -739,7 +745,7 @@
     }
   ],
   "meta": {
-    "generated": "1588278354560",
+    "generated": "1588349206741",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
