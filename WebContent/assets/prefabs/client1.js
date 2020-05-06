@@ -135,7 +135,7 @@ if(!this.meLargo){
 		
 		if(this.body.position.x>this.game.width+100){
 			console.log('client destroy');
-			this.game.state.getCurrentState﻿().fClientsRemain.text--;
+			//this.game.state.getCurrentState﻿().fClientsRemain.text--;
 			this.destroy();
 			
 		}

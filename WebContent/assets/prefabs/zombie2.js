@@ -25,6 +25,8 @@ function zombie2(aGame, aX, aY, aKey, aFrame) {
 	this.body.setSize(80.0, 114.6510238647461);
 	this.body.collideWorldBounds = true;
 	this.body.gravity.y = 980.0;
+	this.currentPlatform = null;
+	this.isNewPlatform = false;
 	
 		this.afterCreate();
 	
@@ -60,7 +62,7 @@ zombie2.prototype.diceCerebro = function() {
 
 zombie2.prototype.update = function() {
 	
-this.game.physics.arcade.collide(this, this.game.state.getCurrentState﻿().fPlatforms, this.getWalkdirection, null, this);
+this.game.physics.arcade.collide(this, this.game.state.getCurrentState﻿().fPlatforms, this.addZombietoPlatform, null, this);
 
 if(this.x>860){
 console.log('destroying');
@@ -74,7 +76,21 @@ this.destroy();
 }
 
 }
-zombie2.prototype.getWalkdirection = function(me,platform){
+zombie2.prototype.addZombietoPlatform = function(me,platform){
+	if(this.currentPlatform !=  platform){
+		
+		if(this.currentPlatform!=null){
+		var index = this.currentPlatform.data.zombiesWalking.indexOf(this);
+   		console.log("index "  + index)
+			if (index > -1) {
+			  this.currentPlatform.data.zombiesWalking.splice(index, 1); //retiro el zombie de la plataforma para que no sigan disparando las gallinas 
+			}
+		}
+		this.currentPlatform =  platform;
+		platform.data.zombiesWalking.push(this);
+		this.isNewPlatform =  true;
+
+	}
 	
 	if(platform.data.direction){
 		this.body.velocity.x=15;

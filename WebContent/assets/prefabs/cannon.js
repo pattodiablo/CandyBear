@@ -40,32 +40,74 @@ cannon.prototype.constructor = cannon;
 cannon.prototype.myCreate = function() {
 	this.cannonlevel = 1;
 	this.upgradeCost = 30*this.cannonlevel;
+	this.fireRate = 120;
+	this.fireTime = 1000;
+	this.shoot =  false;
 	this.weapon = this.game.add.weapon(40, 'bullet');
 	
-    this.weapon.setBulletFrames(0, 80, true);
+    this.weapon.setBulletFrames(0, 40, true);
 
     this.weapon.bulletKillType = Phaser.Weapon.KILL_WORLD_BOUNDS;
     this.weapon.bulletSpeed = 600;
-    this.weapon.fireRate = 1200;
+    
 
-	 this.timer = this.game.time.create(false);
-	 this.timer.loop(300, this.fireCannon, this);
-	 this.timer.start();
+
 	 this.WeaponDir =1;
 	 this.oldYdistance = 0;
 
 }
+cannon.prototype.beginFire = function() {
+	 this.timer = this.game.time.create(false);
+	 this.timer.loop(this.fireTime/this.cannonlevel, this.fireCannon, this);
+	 console.log( this.fireTime/this.cannonlevel);
+	 this.timer.start();
+}
+cannon.prototype.upgradeLevel = function() {
+	
+	 this.cannonlevel ++;
+	 this.timer.destroy();
+	 this.timer = this.game.time.create(false);
+	 this.timer.loop(this.fireTime/this.cannonlevel, this.fireCannon, this);
+	 this.timer.start();
+	 
+}
 
 cannon.prototype.fireCannon = function() {
-	
+	if(this.shoot ){
 	 this.weapon.bulletSpeed = 600*this.WeaponDir;
+	 this.weapon.fireRate = this.fireRate/this.cannonlevel;
 	 this.weapon.trackSprite(this, 35*this.WeaponDir, 30);
 	 this.weapon.fireAngle =  0;
 	 this.weapon.fire();
+	 
+	}
+	 if(this.cannonlevel>=3){
+		 this.cannonlevel = 3
+	 }
+	 
+	switch(this.cannonlevel){
+	case 1:
+			
+		break;
+	case 2:
+		this.tint = 0xED9531;
+		break;
+	case 3:
+		this.tint = 0xCC2323;
+		break;
+	
+	
+	}
 }
 
-cannon.prototype.getPlaceDirection = function(me,platform){
+cannon.prototype.fireIfZombie = function(me,platform){
 
+	if(platform.data.zombiesWalking.length>0){
+		
+		this.shoot = true;
+	}else{
+		this.shoot = false;
+	}
 /*
 	
 	if(platform.data.direction){
@@ -85,8 +127,8 @@ cannon.prototype.getPlaceDirection = function(me,platform){
 
 
 cannon.prototype.update = function() {
-
-	this.colliden = this.game.physics.arcade.collide(this , this.game.state.getCurrentState﻿().fPlatforms, this.getPlaceDirection, null, this);
+	this.weapon.fireRate = 1200/this.cannonlevel;
+	this.colliden = this.game.physics.arcade.collide(this , this.game.state.getCurrentState﻿().fPlatforms, this.fireIfZombie, null, this);
 
 	this.game.physics.arcade.overlap(this.weapon.bullets, this.game.state.getCurrentState﻿().fEnemies, this.game.state.getCurrentState﻿().hitEnemy, null, this);
 	this.game.physics.arcade.overlap(this.weapon.bullets, this.game.state.getCurrentState﻿().fPlatforms, this.game.state.getCurrentState﻿().hitWall, null, this);

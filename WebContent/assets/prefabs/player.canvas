@@ -160,7 +160,7 @@
             },
             {
               "name": "shooting",
-              "frameRate": 24,
+              "frameRate": 12,
               "loop": true,
               "field": true,
               "autoPlay": true,
