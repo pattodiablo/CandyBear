@@ -627,6 +627,12 @@
       "key": "ballModeBtn",
       "url": "assets/images/ballModeBtn.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "chickRoom",
+      "url": "assets/images/chickRoom.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -754,10 +760,15 @@
       "type": "script",
       "key": "arrows",
       "url": "assets/prefabs/arrows.js"
+    },
+    {
+      "type": "script",
+      "key": "chickBear",
+      "url": "assets/prefabs/chickBear.js"
     }
   ],
   "meta": {
-    "generated": "1588866790089",
+    "generated": "1588885074629",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

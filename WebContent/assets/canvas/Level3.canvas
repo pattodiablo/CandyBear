@@ -458,40 +458,21 @@
             "editorName": "pipes",
             "editorField": true,
             "setAll": [],
-            "children": [
-              {
-                "type": "image",
-                "id": "2633b2c2-a865-4abf-9abc-2a64e75a2ebd",
-                "asset": "13",
-                "info": {
-                  "editorName": "pipe",
-                  "editorPick": false,
-                  "y": 278,
-                  "body": {
-                    "type": "ARCADE_RECT",
-                    "immovable": true,
-                    "collideWorldBounds": true
-                  }
-                }
-              },
-              {
-                "type": "image",
-                "id": "2f67397d-ccf5-4145-b801-0cb0bdacef75",
-                "asset": "13",
-                "info": {
-                  "editorName": "pipeExit",
-                  "editorField": true,
-                  "x": 641,
-                  "y": 697,
-                  "scale.x": -1,
-                  "body": {
-                    "type": "ARCADE_RECT",
-                    "immovable": true,
-                    "collideWorldBounds": true
-                  }
+            "children": [{
+              "type": "image",
+              "id": "2633b2c2-a865-4abf-9abc-2a64e75a2ebd",
+              "asset": "13",
+              "info": {
+                "editorName": "pipe",
+                "editorPick": false,
+                "y": 278,
+                "body": {
+                  "type": "ARCADE_RECT",
+                  "immovable": true,
+                  "collideWorldBounds": true
                 }
               }
-            ]
+            }]
           }
         },
         {
@@ -541,7 +522,9 @@
           "id": "75b337e2-78d4-43ef-8938-43f46989b4d7",
           "info": {
             "editorName": "storeGroup",
+            "editorPick": false,
             "editorField": true,
+            "editorShow": false,
             "x": -97,
             "y": 174,
             "setAll": [],
@@ -1360,6 +1343,22 @@
               }
             ]
           }
+        },
+        {
+          "type": "prefab",
+          "prefab": "7",
+          "id": "6c1136d6-061f-4206-b969-87df367a50d3",
+          "asset-ref": {
+            "file": "WebContent/assets/pack.json",
+            "section": "animations",
+            "asset": "atlas6",
+            "sprite": "chick0000"
+          },
+          "info": {
+            "editorName": "chick",
+            "x": 575,
+            "y": 747
+          }
         }
       ]
     }
@@ -1581,6 +1580,7 @@
     "3": "WebContent/assets/prefabs/smallPot.canvas",
     "4": "WebContent/assets/prefabs/bigBtn.canvas",
     "5": "WebContent/assets/prefabs/bag.canvas",
-    "6": "WebContent/assets/prefabs/arrows.canvas"
+    "6": "WebContent/assets/prefabs/arrows.canvas",
+    "7": "WebContent/assets/prefabs/chickBear.canvas"
   }
 }
