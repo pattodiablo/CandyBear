@@ -41,7 +41,7 @@ zombie2.prototype.constructor = zombie2;
 // -- user code here --
 zombie2.prototype.afterCreate = function() {
 	
-	this.life=10;
+	this.life=20;
 	
 
 	this.animations.play('walking');
