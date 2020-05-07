@@ -49,6 +49,7 @@ player.prototype.constructor = player;
 // -- user code here --
 player.prototype.afterCreate = function(_anim_shooting) {
 	
+	this.hasBallMode = false;
 	this.myWeapons = 0;
 	this.myCannons = 0;
 	this.myCannonsUpgrades = [];
@@ -72,16 +73,18 @@ player.prototype.animationStopped = function(sprite, animation) {
 	this.game.state.getCurrentState﻿().shoot();
 };
 player.prototype.ballModeSwitch = function() {
-	
-	if(this.ballMode){
-		this.alpha=0;
-		this.playerBall.alpha = 100;
-		 this.enableObstacleCollide = false;
-	}else{
-		
-		this.alpha=100;
-		this.playerBall.alpha = 0;
-		 this.enableObstacleCollide = true;
+	if(this.hasBallMode){
+
+		if(this.ballMode){
+			this.alpha=0;
+			this.playerBall.alpha = 100;
+			 this.enableObstacleCollide = false;
+		}else{
+			
+			this.alpha=100;
+			this.playerBall.alpha = 0;
+			 this.enableObstacleCollide = true;
+		}
 	}
 }
 player.prototype.update = function() {

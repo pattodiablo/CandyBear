@@ -372,6 +372,7 @@
           "asset": "10",
           "info": {
             "editorName": "pickUpButton",
+            "editorPick": false,
             "editorField": true,
             "x": 411,
             "y": 846,
@@ -540,9 +541,7 @@
           "id": "75b337e2-78d4-43ef-8938-43f46989b4d7",
           "info": {
             "editorName": "storeGroup",
-            "editorPick": false,
             "editorField": true,
-            "editorShow": false,
             "x": -97,
             "y": 174,
             "setAll": [],
@@ -652,6 +651,17 @@
                         "x": 647,
                         "y": 727,
                         "text": "30",
+                        "style.fill": "#f0f0f0"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "62790a19-0f8d-4004-8021-b43384dfb390",
+                      "info": {
+                        "editorName": "item3",
+                        "x": 583,
+                        "y": 725,
+                        "text": "60",
                         "style.fill": "#f0f0f0"
                       }
                     }
@@ -1110,6 +1120,17 @@
                   "x": 653,
                   "y": 276
                 }
+              },
+              {
+                "type": "image",
+                "id": "0c188d02-a929-4954-9940-c9283c7d0a93",
+                "asset": "30",
+                "info": {
+                  "editorName": "ballModeBtn",
+                  "editorField": true,
+                  "x": 560,
+                  "y": 673
+                }
               }
             ]
           }
@@ -1117,7 +1138,7 @@
         {
           "type": "image",
           "id": "564a72fa-89f2-4674-af7d-3ad7c91f98ce",
-          "asset": "30",
+          "asset": "31",
           "info": {
             "editorName": "elevatorInn",
             "editorField": true,
@@ -1129,8 +1150,21 @@
         },
         {
           "type": "image",
+          "id": "5ed3e85f-d6a6-45a8-a402-214e80835994",
+          "asset": "32",
+          "info": {
+            "editorName": "upgradeCannon",
+            "editorPick": false,
+            "editorField": true,
+            "editorShow": false,
+            "x": 302,
+            "y": 846
+          }
+        },
+        {
+          "type": "image",
           "id": "dd59bbbc-8112-4552-a5c0-b5e0e80bab84",
-          "asset": "31",
+          "asset": "33",
           "info": {
             "editorName": "elevatorOut",
             "editorField": true,
@@ -1143,7 +1177,7 @@
         {
           "type": "image",
           "id": "d3f0b988-32db-4244-a568-2a9e58c003e0",
-          "asset": "32",
+          "asset": "34",
           "info": {
             "editorName": "changeDirBtn",
             "editorPick": false,
@@ -1156,7 +1190,7 @@
         {
           "type": "atlas-sprite",
           "id": "f39e1c6e-191e-4df6-a49b-f11acf2a3e2c",
-          "asset": "33",
+          "asset": "35",
           "info": {
             "editorName": "coin",
             "x": 417,
@@ -1209,7 +1243,7 @@
               {
                 "type": "image",
                 "id": "835def20-9e36-4c1e-9833-0b1f48ffc541",
-                "asset": "34",
+                "asset": "36",
                 "info": {
                   "editorName": "cartel",
                   "x": -8,
@@ -1246,7 +1280,7 @@
         {
           "type": "image",
           "id": "d6fc3bca-525a-4f6e-ae05-93c99dcdde03",
-          "asset": "35",
+          "asset": "37",
           "info": {
             "editorName": "greatJob",
             "editorField": true,
@@ -1257,7 +1291,7 @@
         {
           "type": "image",
           "id": "80cc45c0-2ea9-4e07-a7c2-c82738dd06b7",
-          "asset": "36",
+          "asset": "38",
           "info": {
             "editorName": "welcome",
             "editorField": true,
@@ -1282,7 +1316,7 @@
         {
           "type": "atlas-sprite",
           "id": "ceda13f3-b952-47ec-894d-85c7c33523f5",
-          "asset": "37",
+          "asset": "39",
           "info": {
             "editorName": "cliente",
             "x": 319,
@@ -1304,7 +1338,7 @@
               {
                 "type": "image",
                 "id": "c457bbba-752b-4251-9e33-59abb02ba2b6",
-                "asset": "38",
+                "asset": "40",
                 "info": {
                   "editorName": "letreroSuperior",
                   "x": 211,
@@ -1325,17 +1359,6 @@
                 }
               }
             ]
-          }
-        },
-        {
-          "type": "image",
-          "id": "5ed3e85f-d6a6-45a8-a402-214e80835994",
-          "asset": "39",
-          "info": {
-            "editorName": "upgradeCannon",
-            "editorField": true,
-            "x": 302,
-            "y": 846
           }
         }
       ]
@@ -1496,54 +1519,59 @@
     "30": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "elevatorInn"
+      "asset": "ballModeBtn"
     },
     "31": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "elevatorOut"
+      "asset": "elevatorInn"
     },
     "32": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "changeDirBtn"
+      "asset": "upgradeCannon"
     },
     "33": {
+      "file": "WebContent/assets/pack.json",
+      "section": "graphics",
+      "asset": "elevatorOut"
+    },
+    "34": {
+      "file": "WebContent/assets/pack.json",
+      "section": "graphics",
+      "asset": "changeDirBtn"
+    },
+    "35": {
       "file": "WebContent/assets/pack.json",
       "section": "animations",
       "asset": "atlas4",
       "sprite": "coin0000"
     },
-    "34": {
+    "36": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "cartel"
     },
-    "35": {
+    "37": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "greatJob"
     },
-    "36": {
+    "38": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "welcome"
     },
-    "37": {
+    "39": {
       "file": "WebContent/assets/pack.json",
       "section": "animations",
       "asset": "atlas5",
       "sprite": "cliente10000"
     },
-    "38": {
+    "40": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "letreroSuperior"
-    },
-    "39": {
-      "file": "WebContent/assets/pack.json",
-      "section": "graphics",
-      "asset": "upgradeCannon"
     }
   },
   "prefab-table": {

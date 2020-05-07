@@ -134,7 +134,7 @@
             },
             {
               "name": "strawCooking",
-              "frameRate": 60,
+              "frameRate": 12,
               "frames": [
                 "strawCooking0000",
                 "strawCooking0001",
@@ -219,7 +219,7 @@
             },
             {
               "name": "lemonCooking",
-              "frameRate": 60,
+              "frameRate": 12,
               "frames": [
                 "lemonCooking0000",
                 "lemonCooking0001",
@@ -304,7 +304,7 @@
             },
             {
               "name": "bananaCooking",
-              "frameRate": 60,
+              "frameRate": 12,
               "frames": [
                 "bananaCooking0000",
                 "bananaCooking0001",
