@@ -26,6 +26,8 @@ function coin(aGame, aX, aY, aKey, aFrame) {
 	
 	this.fCoinPrefab = this;
 	
+	this.myCreate();
+	
 }
 
 /** @type Phaser.Sprite */
@@ -35,8 +37,15 @@ coin.prototype.constructor = coin;
 
 /* --- end generated code --- */
 // -- user code here --
-coin.prototype.timed = function() {
+
+
+coin.prototype.myCreate = function() {
+	this.coinLife = 25000;
+	this.dissapearingCoin = false;
 	
+}
+coin.prototype.timed = function() {
+	this.dissapearingCoin =  true;
 	this.glowear = new Phaser.Signal();
 	this.glowear.addOnce(this.glow, this);
 	
@@ -75,9 +84,12 @@ coin.prototype.glow = function() {
 	
 }
 coin.prototype.update = function() {
-	if(this.timer.duration<3000){
-		
-		this.glowear.dispatch();
+	if(this.dissapearingCoin){
+		if(this.timer.duration<3000){
+			
+			this.glowear.dispatch();
+		}
 	}
+	
 	
 }

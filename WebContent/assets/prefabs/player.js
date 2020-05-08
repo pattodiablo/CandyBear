@@ -53,7 +53,7 @@ player.prototype.afterCreate = function(_anim_shooting) {
 	this.myWeapons = 0;
 	this.myCannons = 0;
 	this.myCannonsUpgrades = [];
-	this.myCoins = 30;
+	this.myCoins = 200;
 	this.hasKey = false;
 	this.hasPistol =  false;
 	this.animations.play('idle');	
