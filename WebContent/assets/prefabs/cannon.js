@@ -50,37 +50,23 @@ cannon.prototype.myCreate = function() {
     this.weapon.bulletKillType = Phaser.Weapon.KILL_WORLD_BOUNDS;
     this.weapon.bulletSpeed = 600;
     
-
-
+    
 	 this.WeaponDir =1;
 	 this.oldYdistance = 0;
+	 
+	 this.weapon.fireRate = this.fireRate;
 
 }
-cannon.prototype.beginFire = function() {
-	 this.timer = this.game.time.create(false);
-	 this.timer.loop(this.fireTime/this.cannonlevel, this.fireCannon, this);
-	 console.log( this.fireTime/this.cannonlevel);
-	 this.timer.start();
-}
+
 cannon.prototype.upgradeLevel = function() {
-	
+	this.upgradeCost = 30*this.cannonlevel;
 	 this.cannonlevel ++;
-	 this.timer.destroy();
-	 this.timer = this.game.time.create(false);
-	 this.timer.loop(this.fireTime/this.cannonlevel, this.fireCannon, this);
-	 this.timer.start();
+	
 	 
 }
 
-cannon.prototype.fireCannon = function() {
-	if(this.shoot ){
-	 this.weapon.bulletSpeed = 600*this.WeaponDir;
-	 this.weapon.fireRate = this.fireRate/this.cannonlevel;
-	 this.weapon.trackSprite(this, 35*this.WeaponDir, 30);
-	 this.weapon.fireAngle =  0;
-	 this.weapon.fire();
-	 
-	}
+cannon.prototype.checkCannonLevel = function() {
+	
 	 if(this.cannonlevel>=3){
 		 this.cannonlevel = 3
 	 }
@@ -127,17 +113,23 @@ cannon.prototype.fireIfZombie = function(me,platform){
 
 
 cannon.prototype.update = function() {
+	this.weapon.bulletSpeed = 300*this.WeaponDir;
+	this.checkCannonLevel();
+	
+	 this.weapon.trackSprite(this, 35*this.WeaponDir, 30);
+	 this.weapon.fireAngle =  0;
+	if(this.shoot ){
+		
+		 this.weapon.fire();
+		 
+		}
+	
+	
 	this.weapon.fireRate = 1200/this.cannonlevel;
 	this.colliden = this.game.physics.arcade.collide(this , this.game.state.getCurrentState﻿().fPlatforms, this.fireIfZombie, null, this);
 
 	this.game.physics.arcade.overlap(this.weapon.bullets, this.game.state.getCurrentState﻿().fEnemies, this.game.state.getCurrentState﻿().hitEnemy, null, this);
 	this.game.physics.arcade.overlap(this.weapon.bullets, this.game.state.getCurrentState﻿().fPlatforms, this.game.state.getCurrentState﻿().hitWall, null, this);
 
-	if(this.body.velocity.y>200){
-		//this.game.state.getCurrentState﻿().fPlayer.myCannons--;
-		this.weapon.bullets.destroy()
-		//this.destroy() //activar esto si se necesita destruir el canon
-		
-	}
 	
 }
