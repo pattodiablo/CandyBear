@@ -633,6 +633,12 @@
       "key": "chickRoom",
       "url": "assets/images/chickRoom.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "keyBuyBtn",
+      "url": "assets/images/keyBuyBtn.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -768,7 +774,7 @@
     }
   ],
   "meta": {
-    "generated": "1588885074629",
+    "generated": "1588885670823",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

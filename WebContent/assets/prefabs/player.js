@@ -54,6 +54,7 @@ player.prototype.afterCreate = function(_anim_shooting) {
 	this.myCannons = 0;
 	this.myCannonsUpgrades = [];
 	this.myCoins = 30;
+	this.hasKey = false;
 	this.hasPistol =  false;
 	this.animations.play('idle');	
 	_anim_shooting.onLoop.add(this.animationStopped, this);

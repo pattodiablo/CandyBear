@@ -35,3 +35,49 @@ coin.prototype.constructor = coin;
 
 /* --- end generated code --- */
 // -- user code here --
+coin.prototype.timed = function() {
+	
+	this.glowear = new Phaser.Signal();
+	this.glowear.addOnce(this.glow, this);
+	
+	this.bool=true;
+	this.timer = this.game.time.create(false);
+    this.timer.loop(15000, function(){
+    	this.destroy();
+    	
+    }, this);
+    this.timer.start();
+    
+
+ 
+    	
+	
+}
+coin.prototype.glow = function() {
+	this.bool=true;
+	this.timer2 = this.game.time.create(false);
+    this.timer2.loop(100, function(){
+    	this.bool = !this.bool;
+    	
+	    	if(this.bool){
+				this.alpha=0.5;
+	    	}else{
+				this.alpha=1;
+
+	    	}
+	  
+    }, this);
+    this.timer2.start();
+    
+
+	    
+	    
+	
+}
+coin.prototype.update = function() {
+	if(this.timer.duration<3000){
+		
+		this.glowear.dispatch();;
+	}
+	
+}
