@@ -77,7 +77,7 @@ coin.prototype.glow = function() {
 coin.prototype.update = function() {
 	if(this.timer.duration<3000){
 		
-		this.glowear.dispatch();;
+		this.glowear.dispatch();
 	}
 	
 }
