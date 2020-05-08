@@ -49,46 +49,75 @@
 	<SubTexture name="jumping2 instancia 10007" x="1860" y="2" width="44" height="55"/>
 	<SubTexture name="jumping2 instancia 10008" x="1906" y="2" width="44" height="55"/>
 	<SubTexture name="jumping2 instancia 10009" x="1952" y="2" width="44" height="55"/>
-	<SubTexture name="running instancia 10000" x="1998" y="2" width="48" height="58" pivotX="22.4" pivotY="28.45"/>
-	<SubTexture name="running instancia 10001" x="2" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10002" x="52" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10003" x="102" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10004" x="152" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10005" x="202" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10006" x="252" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10007" x="302" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10008" x="352" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10009" x="402" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10010" x="452" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10011" x="502" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10012" x="552" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10013" x="602" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10014" x="652" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10015" x="702" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10016" x="752" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10017" x="802" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10018" x="852" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10019" x="902" y="62" width="48" height="58"/>
-	<SubTexture name="running instancia 10020" x="952" y="62" width="48" height="58"/>
-	<SubTexture name="shooting instancia 10000" x="1002" y="62" width="55" height="56" pivotX="25.05" pivotY="28.8"/>
-	<SubTexture name="shooting instancia 10001" x="1059" y="62" width="55" height="56"/>
-	<SubTexture name="shooting instancia 10002" x="1116" y="62" width="55" height="56"/>
-	<SubTexture name="shooting instancia 10003" x="1173" y="62" width="55" height="56"/>
-	<SubTexture name="walking instancia 10000" x="1230" y="62" width="37" height="57" pivotX="18.95" pivotY="30.6"/>
-	<SubTexture name="walking instancia 10001" x="1269" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10002" x="1308" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10003" x="1347" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10004" x="1386" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10005" x="1425" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10006" x="1464" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10007" x="1503" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10008" x="1542" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10009" x="1581" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10010" x="1620" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10011" x="1659" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10012" x="1698" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10013" x="1737" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10014" x="1776" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10015" x="1815" y="62" width="37" height="57"/>
-	<SubTexture name="walking instancia 10016" x="1854" y="62" width="37" height="57"/>
+	<SubTexture name="megaShoot instancia 10000" x="2" y="61" width="59" height="58" pivotX="26.35" pivotY="30.15"/>
+	<SubTexture name="megaShoot instancia 10001" x="63" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10002" x="124" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10003" x="185" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10004" x="246" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10005" x="307" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10006" x="368" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10007" x="429" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10008" x="490" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10009" x="551" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10010" x="612" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10011" x="673" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10012" x="734" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10013" x="795" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10014" x="856" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10015" x="917" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10016" x="978" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10017" x="1039" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10018" x="1100" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10019" x="1161" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10020" x="1222" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10021" x="1283" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10022" x="1344" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10023" x="1405" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10024" x="1466" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10025" x="1527" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10026" x="1588" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10027" x="1649" y="61" width="59" height="58"/>
+	<SubTexture name="megaShoot instancia 10028" x="1710" y="61" width="59" height="58"/>
+	<SubTexture name="running instancia 10000" x="1771" y="61" width="48" height="58" pivotX="22.4" pivotY="28.45"/>
+	<SubTexture name="running instancia 10001" x="1821" y="61" width="48" height="58"/>
+	<SubTexture name="running instancia 10002" x="1871" y="61" width="48" height="58"/>
+	<SubTexture name="running instancia 10003" x="1921" y="61" width="48" height="58"/>
+	<SubTexture name="running instancia 10004" x="1971" y="61" width="48" height="58"/>
+	<SubTexture name="running instancia 10005" x="2" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10006" x="52" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10007" x="102" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10008" x="152" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10009" x="202" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10010" x="252" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10011" x="302" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10012" x="352" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10013" x="402" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10014" x="452" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10015" x="502" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10016" x="552" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10017" x="602" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10018" x="652" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10019" x="702" y="121" width="48" height="58"/>
+	<SubTexture name="running instancia 10020" x="752" y="121" width="48" height="58"/>
+	<SubTexture name="shooting instancia 10000" x="802" y="121" width="55" height="56" pivotX="25.05" pivotY="28.8"/>
+	<SubTexture name="shooting instancia 10001" x="859" y="121" width="55" height="56"/>
+	<SubTexture name="shooting instancia 10002" x="916" y="121" width="55" height="56"/>
+	<SubTexture name="shooting instancia 10003" x="973" y="121" width="55" height="56"/>
+	<SubTexture name="walking instancia 10000" x="1030" y="121" width="37" height="57" pivotX="18.95" pivotY="30.6"/>
+	<SubTexture name="walking instancia 10001" x="1069" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10002" x="1108" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10003" x="1147" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10004" x="1186" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10005" x="1225" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10006" x="1264" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10007" x="1303" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10008" x="1342" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10009" x="1381" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10010" x="1420" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10011" x="1459" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10012" x="1498" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10013" x="1537" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10014" x="1576" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10015" x="1615" y="121" width="37" height="57"/>
+	<SubTexture name="walking instancia 10016" x="1654" y="121" width="37" height="57"/>
 </TextureAtlas>
