@@ -23,7 +23,7 @@ function player(aGame, aX, aY, aKey, aFrame) {
 	this.animations.add('jumping', ['falling0000', 'falling0001', 'falling0002', 'falling0003', 'falling0004'], 48, true);
 	this.animations.add('jumping2', ['jumping2 instancia 10000', 'jumping2 instancia 10001', 'jumping2 instancia 10002', 'jumping2 instancia 10003', 'jumping2 instancia 10004', 'jumping2 instancia 10005', 'jumping2 instancia 10006', 'jumping2 instancia 10007', 'jumping2 instancia 10008', 'jumping2 instancia 10009'], 48, true);
 	this.animations.add('shoot', ['shooting instancia 10000', 'shooting instancia 10001', 'shooting instancia 10002'], 24, true);
-	var _anim_shooting = this.animations.add('shooting', ['shooting instancia 10000', 'shooting instancia 10001', 'shooting instancia 10002'], 12, true);
+	var _anim_shooting = this.animations.add('shooting', ['shooting instancia 10000', 'shooting instancia 10001', 'shooting instancia 10002', 'shooting instancia 10003'], 12, true);
 	this.animations.add('climbing', ['climbing instancia 10000', 'climbing instancia 10001', 'climbing instancia 10002', 'climbing instancia 10003', 'climbing instancia 10004', 'climbing instancia 10005', 'climbing instancia 10006', 'climbing instancia 10007', 'climbing instancia 10008', 'climbing instancia 10009'], 24, true);
 	this.animations.add('stopClimb', ['climbing instancia 10009'], 1, true);
 	_anim_shooting.play();

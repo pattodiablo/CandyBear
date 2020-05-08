@@ -639,6 +639,12 @@
       "key": "keyBuyBtn",
       "url": "assets/images/keyBuyBtn.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "bullet2",
+      "url": "assets/images/bullet2.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -774,7 +780,7 @@
     }
   ],
   "meta": {
-    "generated": "1588885670823",
+    "generated": "1588967945533",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
