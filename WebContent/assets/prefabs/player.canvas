@@ -195,7 +195,7 @@
             },
             {
               "name": "shuperShot",
-              "frameRate": 24,
+              "frameRate": 32,
               "field": true,
               "autoPlay": true,
               "frames": [

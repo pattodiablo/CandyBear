@@ -26,7 +26,7 @@ function player(aGame, aX, aY, aKey, aFrame) {
 	var _anim_shooting = this.animations.add('shooting', ['shooting instancia 10000', 'shooting instancia 10001', 'shooting instancia 10002', 'shooting instancia 10003'], 12, true);
 	this.animations.add('climbing', ['climbing instancia 10000', 'climbing instancia 10001', 'climbing instancia 10002', 'climbing instancia 10003', 'climbing instancia 10004', 'climbing instancia 10005', 'climbing instancia 10006', 'climbing instancia 10007', 'climbing instancia 10008', 'climbing instancia 10009'], 24, true);
 	this.animations.add('stopClimb', ['climbing instancia 10009'], 1, true);
-	var _anim_shuperShot = this.animations.add('shuperShot', ['megaShoot instancia 10000', 'megaShoot instancia 10001', 'megaShoot instancia 10002', 'megaShoot instancia 10003', 'megaShoot instancia 10004', 'megaShoot instancia 10005', 'megaShoot instancia 10006', 'megaShoot instancia 10007', 'megaShoot instancia 10008', 'megaShoot instancia 10009', 'megaShoot instancia 10010', 'megaShoot instancia 10011', 'megaShoot instancia 10012', 'megaShoot instancia 10013', 'megaShoot instancia 10014', 'megaShoot instancia 10015', 'megaShoot instancia 10016', 'megaShoot instancia 10017', 'megaShoot instancia 10018', 'megaShoot instancia 10019', 'megaShoot instancia 10020', 'megaShoot instancia 10021', 'megaShoot instancia 10022', 'megaShoot instancia 10023', 'megaShoot instancia 10024', 'megaShoot instancia 10025', 'megaShoot instancia 10026', 'megaShoot instancia 10027', 'megaShoot instancia 10028', 'shooting instancia 10000', 'shooting instancia 10001', 'shooting instancia 10002', 'shooting instancia 10003'], 24, false);
+	var _anim_shuperShot = this.animations.add('shuperShot', ['megaShoot instancia 10000', 'megaShoot instancia 10001', 'megaShoot instancia 10002', 'megaShoot instancia 10003', 'megaShoot instancia 10004', 'megaShoot instancia 10005', 'megaShoot instancia 10006', 'megaShoot instancia 10007', 'megaShoot instancia 10008', 'megaShoot instancia 10009', 'megaShoot instancia 10010', 'megaShoot instancia 10011', 'megaShoot instancia 10012', 'megaShoot instancia 10013', 'megaShoot instancia 10014', 'megaShoot instancia 10015', 'megaShoot instancia 10016', 'megaShoot instancia 10017', 'megaShoot instancia 10018', 'megaShoot instancia 10019', 'megaShoot instancia 10020', 'megaShoot instancia 10021', 'megaShoot instancia 10022', 'megaShoot instancia 10023', 'megaShoot instancia 10024', 'megaShoot instancia 10025', 'megaShoot instancia 10026', 'megaShoot instancia 10027', 'megaShoot instancia 10028', 'shooting instancia 10000', 'shooting instancia 10001', 'shooting instancia 10002', 'shooting instancia 10003'], 32, false);
 	_anim_shuperShot.play();
 	this.game.physics.arcade.enable(this);
 	this.body.setSize(22.02295970916748, 54.81462860107422, 8.333687782287598, 0.0);
@@ -54,7 +54,7 @@ player.prototype.afterCreate = function(_anim_shooting) {
 	this.myWeapons = 0;
 	this.myCannons = 0;
 	this.myCannonsUpgrades = [];
-	this.myCoins = 200;
+	this.myCoins = 10;
 	this.hasKey = false;
 	this.hasPistol =  false;
 	this.animations.play('idle');	
