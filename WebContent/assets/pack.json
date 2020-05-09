@@ -777,10 +777,15 @@
       "type": "script",
       "key": "chickBear",
       "url": "assets/prefabs/chickBear.js"
+    },
+    {
+      "type": "script",
+      "key": "upgradeBar",
+      "url": "assets/prefabs/upgradeBar.js"
     }
   ],
   "meta": {
-    "generated": "1588967945533",
+    "generated": "1589037859646",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

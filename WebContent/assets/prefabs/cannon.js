@@ -38,6 +38,8 @@ cannon.prototype.constructor = cannon;
 // -- user code here --
 
 cannon.prototype.myCreate = function() {
+	
+	this.upgrading = false;
 	this.cannonlevel = 1;
 	this.upgradeCost = 30*this.cannonlevel;
 	this.fireRate = 120;
@@ -59,10 +61,30 @@ cannon.prototype.myCreate = function() {
 }
 
 cannon.prototype.upgradeLevel = function() {
-	this.upgradeCost = 30*this.cannonlevel;
-	 this.cannonlevel ++;
 	
-	 
+	var upgradeBar1 = new upgradeBar(this.game, this.x+(20*this.WeaponDir), this.y-10);
+	this.game.add.existing(upgradeBar1);
+	this.updating = upgradeBar1.animations.play('updating');
+	this.upgrading = true;
+	this.fireRate = 0;
+	this.game.state.getCurrentState﻿().fPickUpButton.tint = 0xBB2323;
+	this.game.state.getCurrentState﻿().fPickUpButton.inputEnabled = false;
+	this.game.state.getCurrentState﻿().fChangeDirBtn.tint = 0xBB2323;
+	this.game.state.getCurrentState﻿().fChangeDirBtn.inputEnabled = false;
+	
+	this.updating.onComplete.add(function(){
+		this.game.state.getCurrentState﻿().fPickUpButton.tint = 0xFFFFFF;
+		this.game.state.getCurrentState﻿().fPickUpButton.inputEnabled = true;
+		this.game.state.getCurrentState﻿().fChangeDirBtn.tint = 0xFFFFFF;
+		this.game.state.getCurrentState﻿().fChangeDirBtn.inputEnabled = true;
+		 this.upgrading =  false;
+		 this.fireRate = 120;
+		 this.cannonlevel ++;
+		 upgradeBar1.destroy();
+		}, this);
+	
+	 this.upgradeCost = 30*this.cannonlevel;
+
 }
 
 cannon.prototype.checkCannonLevel = function() {
