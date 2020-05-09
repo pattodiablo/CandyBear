@@ -46,4 +46,28 @@
 	<SubTexture name="chick0017" x="1344" y="2" width="36" height="50"/>
 	<SubTexture name="chick0018" x="1382" y="2" width="36" height="50"/>
 	<SubTexture name="chick0019" x="1420" y="2" width="36" height="50"/>
+	<SubTexture name="updating0000" x="1458" y="2" width="51" height="12" pivotX="24.95" pivotY="5.55"/>
+	<SubTexture name="updating0001" x="1511" y="2" width="51" height="12"/>
+	<SubTexture name="updating0002" x="1564" y="2" width="51" height="12"/>
+	<SubTexture name="updating0003" x="1617" y="2" width="51" height="12"/>
+	<SubTexture name="updating0004" x="1670" y="2" width="51" height="12"/>
+	<SubTexture name="updating0005" x="1723" y="2" width="51" height="12"/>
+	<SubTexture name="updating0006" x="1776" y="2" width="51" height="12"/>
+	<SubTexture name="updating0007" x="1829" y="2" width="51" height="12"/>
+	<SubTexture name="updating0008" x="1882" y="2" width="51" height="12"/>
+	<SubTexture name="updating0009" x="1935" y="2" width="51" height="12"/>
+	<SubTexture name="updating0010" x="1988" y="2" width="51" height="12"/>
+	<SubTexture name="updating0011" x="2" y="54" width="51" height="12"/>
+	<SubTexture name="updating0012" x="55" y="54" width="51" height="12"/>
+	<SubTexture name="updating0013" x="108" y="54" width="51" height="12"/>
+	<SubTexture name="updating0014" x="161" y="54" width="51" height="12"/>
+	<SubTexture name="updating0015" x="214" y="54" width="51" height="12"/>
+	<SubTexture name="updating0016" x="267" y="54" width="51" height="12"/>
+	<SubTexture name="updating0017" x="320" y="54" width="51" height="12"/>
+	<SubTexture name="updating0018" x="373" y="54" width="51" height="12"/>
+	<SubTexture name="updating0019" x="426" y="54" width="51" height="12"/>
+	<SubTexture name="updating0020" x="479" y="54" width="51" height="12"/>
+	<SubTexture name="updating0021" x="532" y="54" width="51" height="12"/>
+	<SubTexture name="updating0022" x="585" y="54" width="51" height="12"/>
+	<SubTexture name="updating0023" x="638" y="54" width="51" height="12"/>
 </TextureAtlas>
