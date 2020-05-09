@@ -48,7 +48,10 @@
           "type": "image",
           "id": "d97d4a29-bf86-461d-8abd-384055296f2b",
           "asset": "0",
-          "info": {"editorName": "newBackground"}
+          "info": {
+            "editorName": "newBackground",
+            "editorPick": false
+          }
         },
         {
           "type": "image",
@@ -564,9 +567,7 @@
           "id": "75b337e2-78d4-43ef-8938-43f46989b4d7",
           "info": {
             "editorName": "storeGroup",
-            "editorPick": false,
             "editorField": true,
-            "editorShow": false,
             "x": -97,
             "y": 174,
             "setAll": [],
@@ -685,7 +686,7 @@
                       "info": {
                         "editorName": "item3",
                         "x": 576,
-                        "y": 725,
+                        "y": 726,
                         "text": "60",
                         "style.fill": "#f0f0f0"
                       }
@@ -694,10 +695,11 @@
                       "type": "text",
                       "id": "8484582c-410c-445a-92a2-7cfab52c4705",
                       "info": {
-                        "editorName": "item4",
+                        "editorName": "keyCost",
+                        "editorField": true,
                         "x": 419,
                         "y": 727,
-                        "text": "500\r\n",
+                        "text": "270",
                         "style.fill": "#f0f0f0",
                         "style.align": "CENTER"
                       }
