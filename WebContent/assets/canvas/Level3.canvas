@@ -568,6 +568,7 @@
           "info": {
             "editorName": "storeGroup",
             "editorField": true,
+            "editorShow": false,
             "x": -97,
             "y": 174,
             "setAll": [],
@@ -592,6 +593,7 @@
                 "asset": "7",
                 "info": {
                   "editorName": "storeBgBlack",
+                  "editorPick": false,
                   "x": 72,
                   "y": 15
                 }
@@ -602,6 +604,7 @@
                 "asset": "15",
                 "info": {
                   "editorName": "shop",
+                  "editorPick": false,
                   "x": 100,
                   "y": 13
                 }
@@ -622,6 +625,7 @@
                 "asset": "17",
                 "info": {
                   "editorName": "shopSpace",
+                  "editorPick": false,
                   "x": 385,
                   "y": 643
                 }
@@ -652,6 +656,7 @@
                       "asset": "19",
                       "info": {
                         "editorName": "cannonBuyBtn",
+                        "editorPick": false,
                         "editorField": true,
                         "x": 626,
                         "y": 665,
