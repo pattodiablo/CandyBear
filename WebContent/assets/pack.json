@@ -782,10 +782,15 @@
       "type": "script",
       "key": "upgradeBar",
       "url": "assets/prefabs/upgradeBar.js"
+    },
+    {
+      "type": "script",
+      "key": "lamp",
+      "url": "assets/prefabs/lamp.js"
     }
   ],
   "meta": {
-    "generated": "1589037859646",
+    "generated": "1589400741091",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

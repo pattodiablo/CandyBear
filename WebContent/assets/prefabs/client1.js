@@ -17,7 +17,7 @@
 function client1(aGame, aX, aY, aKey, aFrame) {
 	Phaser.Sprite.call(this, aGame, aX, aY, aKey || 'atlas5', aFrame == undefined || aFrame == null? 'cliente10000' : aFrame);
 	this.anchor.set(0.5, 0.5);
-	var _anim_walk = this.animations.add('walk', ['cliente10000', 'cliente10001', 'cliente10002', 'cliente10003', 'cliente10004', 'cliente10005', 'cliente10006', 'cliente10007', 'cliente10008', 'cliente10009', 'cliente10010', 'cliente10011', 'cliente10012', 'cliente10013', 'cliente10014', 'cliente10015', 'cliente10016'], 12, true);
+	var _anim_walk = this.animations.add('walk', ['cliente10000', 'cliente10001', 'cliente10002', 'cliente10003', 'cliente10004', 'cliente10005', 'cliente10006', 'cliente10007', 'cliente10008', 'cliente10009', 'cliente10010', 'cliente10011', 'cliente10012', 'cliente10013', 'cliente10014', 'cliente10015', 'cliente10016'], 24, true);
 	this.animations.add('idle', ['cliente10004'], 60, false);
 	_anim_walk.play();
 	this.game.physics.arcade.enable(this);
@@ -61,7 +61,7 @@ client1.prototype.makeAnOrder = function() {
 	this.orderBG  = new orderItem(this.game, this.world.x, this.world.y);
 	this.orderBG.myClientIs = this;
 	var bounce=this.game.add.tween(this.orderBG);
-	bounce.to({ y: this.orderBG.y-100 }, 500, Phaser.Easing.Bounce.Out);
+	bounce.to({ y: this.orderBG.y-60 }, 500, Phaser.Easing.Bounce.Out);
 	bounce.start();
 	bounce.onComplete.add(function(){
 		this.orderBG.createFlavor();

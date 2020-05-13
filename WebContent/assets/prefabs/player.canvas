@@ -239,6 +239,7 @@
             "type": "ARCADE_RECT",
             "offsetX": 8.333687782287598,
             "collideWorldBounds": true,
+            "bounceY": 0.2,
             "gravityY": 800,
             "width": 22.02295970916748,
             "height": 54.81462860107422
