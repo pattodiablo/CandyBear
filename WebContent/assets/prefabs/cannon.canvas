@@ -45,26 +45,78 @@
         "info": {
           "editorName": "cannon0000",
           "editorField": true,
-          "animations": [{
-            "name": "idle",
-            "frameRate": 12,
-            "loop": true,
-            "autoPlay": true,
-            "frames": [
-              "cannon0000",
-              "cannon0001",
-              "cannon0002",
-              "cannon0003",
-              "cannon0004",
-              "cannon0005",
-              "cannon0006",
-              "cannon0007",
-              "cannon0008",
-              "cannon0009",
-              "cannon0010",
-              "cannon0011"
-            ]
-          }],
+          "animations": [
+            {
+              "name": "level0",
+              "frameRate": 12,
+              "loop": true,
+              "frames": [
+                "cannonL10000",
+                "cannonL10001",
+                "cannonL10002",
+                "cannonL10003",
+                "cannonL10004",
+                "cannonL10005",
+                "cannonL10006",
+                "cannonL10007",
+                "cannonL10008",
+                "cannonL10009",
+                "cannonL10010",
+                "cannonL10011"
+              ]
+            },
+            {
+              "name": "level1",
+              "frameRate": 12,
+              "loop": true,
+              "frames": [
+                "cannon0000",
+                "cannon0001",
+                "cannon0002",
+                "cannon0003",
+                "cannon0004",
+                "cannon0005",
+                "cannon0006",
+                "cannon0007",
+                "cannon0008",
+                "cannon0009",
+                "cannon0010",
+                "cannon0011"
+              ]
+            },
+            {
+              "name": "level2",
+              "frameRate": 12,
+              "loop": true,
+              "autoPlay": true,
+              "frames": [
+                "cannonL20000",
+                "cannonL20001",
+                "cannonL20002",
+                "cannonL20003",
+                "cannonL20004",
+                "cannonL20005",
+                "cannonL20006",
+                "cannonL20007",
+                "cannonL20008",
+                "cannonL20009",
+                "cannonL20010",
+                "cannonL20011",
+                "cannonL20000",
+                "cannonL20001",
+                "cannonL20002",
+                "cannonL20003",
+                "cannonL20004",
+                "cannonL20005",
+                "cannonL20006",
+                "cannonL20007",
+                "cannonL20008",
+                "cannonL20009",
+                "cannonL20010",
+                "cannonL20011"
+              ]
+            }
+          ],
           "body": {
             "type": "ARCADE_RECT",
             "gravityY": 800

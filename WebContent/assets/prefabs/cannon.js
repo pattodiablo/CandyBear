@@ -16,8 +16,10 @@
  */
 function cannon(aGame, aX, aY, aKey, aFrame) {
 	Phaser.Sprite.call(this, aGame, aX, aY, aKey || 'atlas4', aFrame == undefined || aFrame == null? 'cannon0000' : aFrame);
-	var _anim_idle = this.animations.add('idle', ['cannon0000', 'cannon0001', 'cannon0002', 'cannon0003', 'cannon0004', 'cannon0005', 'cannon0006', 'cannon0007', 'cannon0008', 'cannon0009', 'cannon0010', 'cannon0011'], 12, true);
-	_anim_idle.play();
+	this.animations.add('level0', ['cannonL10000', 'cannonL10001', 'cannonL10002', 'cannonL10003', 'cannonL10004', 'cannonL10005', 'cannonL10006', 'cannonL10007', 'cannonL10008', 'cannonL10009', 'cannonL10010', 'cannonL10011'], 12, true);
+	this.animations.add('level1', ['cannon0000', 'cannon0001', 'cannon0002', 'cannon0003', 'cannon0004', 'cannon0005', 'cannon0006', 'cannon0007', 'cannon0008', 'cannon0009', 'cannon0010', 'cannon0011'], 12, true);
+	var _anim_level2 = this.animations.add('level2', ['cannonL20000', 'cannonL20001', 'cannonL20002', 'cannonL20003', 'cannonL20004', 'cannonL20005', 'cannonL20006', 'cannonL20007', 'cannonL20008', 'cannonL20009', 'cannonL20010', 'cannonL20011', 'cannonL20000', 'cannonL20001', 'cannonL20002', 'cannonL20003', 'cannonL20004', 'cannonL20005', 'cannonL20006', 'cannonL20007', 'cannonL20008', 'cannonL20009', 'cannonL20010', 'cannonL20011'], 12, true);
+	_anim_level2.play();
 	this.game.physics.arcade.enable(this);
 	this.body.gravity.y = 800.0;
 	
@@ -102,13 +104,13 @@ cannon.prototype.checkCannonLevel = function() {
 	switch(this.cannonlevel){
 	
 		case 1:
-				
+			this.animations.play('level0')
 			break;
 		case 2:
-			this.tint = 0xED9531;
+			this.animations.play('level1')
 			break;
 		case 3:
-			this.tint = 0xCC2323;
+			this.animations.play('level2')
 			break;
 		
 		
