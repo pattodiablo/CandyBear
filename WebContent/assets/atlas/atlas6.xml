@@ -46,28 +46,88 @@
 	<SubTexture name="chick0017" x="1344" y="2" width="36" height="50"/>
 	<SubTexture name="chick0018" x="1382" y="2" width="36" height="50"/>
 	<SubTexture name="chick0019" x="1420" y="2" width="36" height="50"/>
-	<SubTexture name="updating0000" x="1458" y="2" width="51" height="12" pivotX="24.95" pivotY="5.55"/>
-	<SubTexture name="updating0001" x="1511" y="2" width="51" height="12"/>
-	<SubTexture name="updating0002" x="1564" y="2" width="51" height="12"/>
-	<SubTexture name="updating0003" x="1617" y="2" width="51" height="12"/>
-	<SubTexture name="updating0004" x="1670" y="2" width="51" height="12"/>
-	<SubTexture name="updating0005" x="1723" y="2" width="51" height="12"/>
-	<SubTexture name="updating0006" x="1776" y="2" width="51" height="12"/>
-	<SubTexture name="updating0007" x="1829" y="2" width="51" height="12"/>
-	<SubTexture name="updating0008" x="1882" y="2" width="51" height="12"/>
-	<SubTexture name="updating0009" x="1935" y="2" width="51" height="12"/>
-	<SubTexture name="updating0010" x="1988" y="2" width="51" height="12"/>
-	<SubTexture name="updating0011" x="2" y="54" width="51" height="12"/>
-	<SubTexture name="updating0012" x="55" y="54" width="51" height="12"/>
-	<SubTexture name="updating0013" x="108" y="54" width="51" height="12"/>
-	<SubTexture name="updating0014" x="161" y="54" width="51" height="12"/>
-	<SubTexture name="updating0015" x="214" y="54" width="51" height="12"/>
-	<SubTexture name="updating0016" x="267" y="54" width="51" height="12"/>
-	<SubTexture name="updating0017" x="320" y="54" width="51" height="12"/>
-	<SubTexture name="updating0018" x="373" y="54" width="51" height="12"/>
-	<SubTexture name="updating0019" x="426" y="54" width="51" height="12"/>
-	<SubTexture name="updating0020" x="479" y="54" width="51" height="12"/>
-	<SubTexture name="updating0021" x="532" y="54" width="51" height="12"/>
-	<SubTexture name="updating0022" x="585" y="54" width="51" height="12"/>
-	<SubTexture name="updating0023" x="638" y="54" width="51" height="12"/>
+	<SubTexture name="lamp instancia 10000" x="1458" y="2" width="68" height="116" pivotX="34.4" pivotY="57.9"/>
+	<SubTexture name="lamp instancia 10001" x="1528" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10002" x="1598" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10003" x="1668" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10004" x="1738" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10005" x="1808" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10006" x="1878" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10007" x="1948" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10008" x="2018" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10009" x="2088" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10010" x="2158" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10011" x="2228" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10012" x="2298" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10013" x="2368" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10014" x="2438" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10015" x="2508" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10016" x="2578" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10017" x="2648" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10018" x="2718" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10019" x="2788" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10020" x="2858" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10021" x="2928" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10022" x="2998" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10023" x="3068" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10024" x="3138" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10025" x="3208" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10026" x="3278" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10027" x="3348" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10028" x="3418" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10029" x="3488" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10030" x="3558" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10031" x="3628" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10032" x="3698" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10033" x="3768" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10034" x="3838" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10035" x="3908" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10036" x="3978" y="2" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10037" x="2" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10038" x="72" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10039" x="142" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10040" x="212" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10041" x="282" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10042" x="352" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10043" x="422" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10044" x="492" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10045" x="562" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10046" x="632" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10047" x="702" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10048" x="772" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10049" x="842" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10050" x="912" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10051" x="982" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10052" x="1052" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10053" x="1122" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10054" x="1192" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10055" x="1262" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10056" x="1332" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10057" x="1402" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10058" x="1472" y="120" width="68" height="116"/>
+	<SubTexture name="lamp instancia 10059" x="1542" y="120" width="68" height="116"/>
+	<SubTexture name="updating0000" x="1612" y="120" width="51" height="12" pivotX="24.95" pivotY="5.55"/>
+	<SubTexture name="updating0001" x="1665" y="120" width="51" height="12"/>
+	<SubTexture name="updating0002" x="1718" y="120" width="51" height="12"/>
+	<SubTexture name="updating0003" x="1771" y="120" width="51" height="12"/>
+	<SubTexture name="updating0004" x="1824" y="120" width="51" height="12"/>
+	<SubTexture name="updating0005" x="1877" y="120" width="51" height="12"/>
+	<SubTexture name="updating0006" x="1930" y="120" width="51" height="12"/>
+	<SubTexture name="updating0007" x="1983" y="120" width="51" height="12"/>
+	<SubTexture name="updating0008" x="2036" y="120" width="51" height="12"/>
+	<SubTexture name="updating0009" x="2089" y="120" width="51" height="12"/>
+	<SubTexture name="updating0010" x="2142" y="120" width="51" height="12"/>
+	<SubTexture name="updating0011" x="2195" y="120" width="51" height="12"/>
+	<SubTexture name="updating0012" x="2248" y="120" width="51" height="12"/>
+	<SubTexture name="updating0013" x="2301" y="120" width="51" height="12"/>
+	<SubTexture name="updating0014" x="2354" y="120" width="51" height="12"/>
+	<SubTexture name="updating0015" x="2407" y="120" width="51" height="12"/>
+	<SubTexture name="updating0016" x="2460" y="120" width="51" height="12"/>
+	<SubTexture name="updating0017" x="2513" y="120" width="51" height="12"/>
+	<SubTexture name="updating0018" x="2566" y="120" width="51" height="12"/>
+	<SubTexture name="updating0019" x="2619" y="120" width="51" height="12"/>
+	<SubTexture name="updating0020" x="2672" y="120" width="51" height="12"/>
+	<SubTexture name="updating0021" x="2725" y="120" width="51" height="12"/>
+	<SubTexture name="updating0022" x="2778" y="120" width="51" height="12"/>
+	<SubTexture name="updating0023" x="2831" y="120" width="51" height="12"/>
 </TextureAtlas>
