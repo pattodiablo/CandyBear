@@ -224,18 +224,18 @@
 	<SubTexture name="cannon0009" x="2818" y="632" width="54" height="59"/>
 	<SubTexture name="cannon0010" x="2874" y="632" width="54" height="59"/>
 	<SubTexture name="cannon0011" x="2930" y="632" width="54" height="59"/>
-	<SubTexture name="cannonL10000" x="2986" y="632" width="54" height="57" pivotX="27.1" pivotY="27.75"/>
-	<SubTexture name="cannonL10001" x="3042" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10002" x="3098" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10003" x="3154" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10004" x="3210" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10005" x="3266" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10006" x="3322" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10007" x="3378" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10008" x="3434" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10009" x="3490" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10010" x="3546" y="632" width="54" height="57"/>
-	<SubTexture name="cannonL10011" x="3602" y="632" width="54" height="57"/>
+	<SubTexture name="cannonL10000" x="2986" y="632" width="54" height="59" pivotX="27.1" pivotY="29.7"/>
+	<SubTexture name="cannonL10001" x="3042" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10002" x="3098" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10003" x="3154" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10004" x="3210" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10005" x="3266" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10006" x="3322" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10007" x="3378" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10008" x="3434" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10009" x="3490" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10010" x="3546" y="632" width="54" height="59"/>
+	<SubTexture name="cannonL10011" x="3602" y="632" width="54" height="59"/>
 	<SubTexture name="cannonL20000" x="3658" y="632" width="53" height="59" pivotX="27.1" pivotY="29.75"/>
 	<SubTexture name="cannonL20001" x="3713" y="632" width="53" height="59"/>
 	<SubTexture name="cannonL20002" x="3768" y="632" width="53" height="59"/>
