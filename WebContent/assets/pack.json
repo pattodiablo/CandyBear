@@ -656,6 +656,12 @@
       "key": "looseBg",
       "url": "assets/images/looseBg.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "reloadBtn",
+      "url": "assets/images/reloadBtn.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -801,7 +807,7 @@
     }
   ],
   "meta": {
-    "generated": "1589557381207",
+    "generated": "1589559336936",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
