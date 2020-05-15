@@ -397,22 +397,7 @@
             "x": -246,
             "y": -59,
             "setAll": [],
-            "children": [{
-              "type": "prefab",
-              "prefab": "1",
-              "id": "f3e60d7b-9039-4bb8-a5e8-2d8bebd87403",
-              "asset-ref": {
-                "file": "WebContent/assets/pack.json",
-                "section": "animations",
-                "asset": "atlas2",
-                "sprite": "idle0000"
-              },
-              "info": {
-                "editorName": "idle",
-                "x": 604,
-                "y": 790
-              }
-            }]
+            "children": []
           }
         },
         {
@@ -519,7 +504,7 @@
         },
         {
           "type": "prefab",
-          "prefab": "2",
+          "prefab": "1",
           "id": "c5bcc7ce-c9be-4f84-8572-22c0adde5884",
           "asset-ref": {
             "file": "WebContent/assets/pack.json",
@@ -579,7 +564,7 @@
         },
         {
           "type": "prefab",
-          "prefab": "3",
+          "prefab": "2",
           "id": "20783be0-f0d6-4521-9b14-ee7fdced757d",
           "asset-ref": {
             "file": "WebContent/assets/pack.json",
@@ -595,7 +580,7 @@
         },
         {
           "type": "prefab",
-          "prefab": "4",
+          "prefab": "3",
           "id": "6ab0e6b3-862d-4c94-b511-0b8cfb6bdbaf",
           "asset-ref": {
             "file": "WebContent/assets/pack.json",
@@ -774,7 +759,7 @@
                   "children": [
                     {
                       "type": "prefab",
-                      "prefab": "5",
+                      "prefab": "4",
                       "id": "e8177042-205f-4498-aacc-e2b36066448a",
                       "asset-ref": {
                         "file": "WebContent/assets/pack.json",
@@ -791,7 +776,7 @@
                     },
                     {
                       "type": "prefab",
-                      "prefab": "5",
+                      "prefab": "4",
                       "id": "a542eaae-d694-4b74-b921-f8e2fc4d068e",
                       "asset-ref": {
                         "file": "WebContent/assets/pack.json",
@@ -808,7 +793,7 @@
                     },
                     {
                       "type": "prefab",
-                      "prefab": "5",
+                      "prefab": "4",
                       "id": "2011622d-c411-49d6-a530-66ecf08d1bee",
                       "asset-ref": {
                         "file": "WebContent/assets/pack.json",
@@ -825,7 +810,7 @@
                     },
                     {
                       "type": "prefab",
-                      "prefab": "6",
+                      "prefab": "5",
                       "id": "d8aa7250-f751-4acc-8b42-0cca92630d1f",
                       "asset-ref": {
                         "file": "WebContent/assets/pack.json",
@@ -1126,7 +1111,7 @@
                     },
                     {
                       "type": "prefab",
-                      "prefab": "7",
+                      "prefab": "6",
                       "id": "c2bf64a4-d360-4719-a118-7702677eadfe",
                       "asset-ref": {
                         "file": "WebContent/assets/pack.json",
@@ -1201,7 +1186,7 @@
               },
               {
                 "type": "prefab",
-                "prefab": "8",
+                "prefab": "7",
                 "id": "5f1f3a3c-417b-40b6-bc6b-9ad1627328e8",
                 "asset-ref": {
                   "file": "WebContent/assets/pack.json",
@@ -1427,6 +1412,7 @@
           "info": {
             "editorName": "upperBanner",
             "editorField": true,
+            "x": 76,
             "y": -139,
             "setAll": [],
             "children": [
@@ -1709,13 +1695,12 @@
   },
   "prefab-table": {
     "0": "WebContent/assets/prefabs/chickBear.canvas",
-    "1": "WebContent/assets/prefabs/zombie2.canvas",
-    "2": "WebContent/assets/prefabs/lifeBar.canvas",
-    "3": "WebContent/assets/prefabs/ascensor.canvas",
-    "4": "WebContent/assets/prefabs/player.canvas",
-    "5": "WebContent/assets/prefabs/smallPot.canvas",
-    "6": "WebContent/assets/prefabs/bigBtn.canvas",
-    "7": "WebContent/assets/prefabs/bag.canvas",
-    "8": "WebContent/assets/prefabs/arrows.canvas"
+    "1": "WebContent/assets/prefabs/lifeBar.canvas",
+    "2": "WebContent/assets/prefabs/ascensor.canvas",
+    "3": "WebContent/assets/prefabs/player.canvas",
+    "4": "WebContent/assets/prefabs/smallPot.canvas",
+    "5": "WebContent/assets/prefabs/bigBtn.canvas",
+    "6": "WebContent/assets/prefabs/bag.canvas",
+    "7": "WebContent/assets/prefabs/arrows.canvas"
   }
 }

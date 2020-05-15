@@ -1,7 +1,7 @@
 {
   "canvas-version": 2,
   "settings": {
-    "className": "looseScreen",
+    "className": "winScreen",
     "sceneWidth": 640,
     "sceneHeight": 960,
     "generateOnSave": true,
@@ -19,7 +19,7 @@
       200
     ],
     "showGrid": true,
-    "create_after": "this.myCreate()"
+    "create_after": "this.myCreate();"
   },
   "stateSettings": {
     "scaleMode": "SHOW_ALL",
@@ -37,26 +37,26 @@
   },
   "world": {
     "type": "group",
-    "id": "3858dd55-260e-44ac-aebe-a4f8c6732395",
+    "id": "94ad9839-840c-4e36-8ef4-555894993e73",
     "info": {
-      "editorName": "looseScreen",
+      "editorName": "winScreen",
       "setAll": [],
       "children": [
         {
           "type": "image",
-          "id": "65029669-b1cc-445e-a6e2-b89d88fee7e6",
+          "id": "5ab2e646-1f47-43fa-b7dc-b5f522dc948d",
           "asset": "0",
-          "info": {"editorName": "looseBg"}
+          "info": {"editorName": "winBg"}
         },
         {
           "type": "image",
-          "id": "646bb572-4466-4ff7-9cf5-91e7d85157fb",
+          "id": "9c797781-6257-424f-b4ff-f5edab682d82",
           "asset": "1",
           "info": {
-            "editorName": "reloadBtn",
+            "editorName": "playBtn",
             "editorField": true,
-            "x": 265,
-            "y": 978
+            "x": 266,
+            "y": 659
           }
         }
       ]
@@ -67,12 +67,12 @@
     "0": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "looseBg"
+      "asset": "winBg"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "reloadBtn"
+      "asset": "playBtn"
     }
   },
   "prefab-table": {}

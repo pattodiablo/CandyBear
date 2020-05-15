@@ -37,11 +37,33 @@ looseScreen.prototype.preload = function () {
 looseScreen.prototype.create = function () {
 	this.add.sprite(0.0, 0.0, 'looseBg');
 	
-	this.add.sprite(271.0, 626.0, 'reloadBtn');
+	var _reloadBtn = this.add.sprite(265.0, 978.0, 'reloadBtn');
 	
 	
+	
+	// fields
+	
+	this.fReloadBtn = _reloadBtn;
+	this.myCreate()
 	
 };
 
 /* --- end generated code --- */
 // -- user code here --
+
+looseScreen.prototype.myCreate = function(){
+	
+
+	this.fReloadBtn.inputEnabled =  true;
+	this.fReloadBtn.input.useHandCursor = true;
+	this.fReloadBtn.events.onInputDown.add(this.reloadGame, this);
+
+	var bounce=this.game.add.tween(this.fReloadBtn);
+	bounce.to({ y: 625 }, 500, Phaser.Easing.Bounce.Out);	  
+  	bounce.start();
+
+};
+
+looseScreen.prototype.reloadGame = function(){
+	this.game.state.start("Level3",true,true);
+};

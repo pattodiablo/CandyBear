@@ -662,6 +662,17 @@
       "key": "reloadBtn",
       "url": "assets/images/reloadBtn.png",
       "overwrite": false
+    },
+    {
+      "type": "script",
+      "key": "winScreen",
+      "url": "assets/canvas/winScreen.js"
+    },
+    {
+      "type": "image",
+      "key": "winBg",
+      "url": "assets/images/winBg.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -807,7 +818,7 @@
     }
   ],
   "meta": {
-    "generated": "1589559336936",
+    "generated": "1589560928146",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
