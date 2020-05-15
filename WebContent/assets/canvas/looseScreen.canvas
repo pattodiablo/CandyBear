@@ -40,19 +40,38 @@
     "info": {
       "editorName": "looseScreen",
       "setAll": [],
-      "children": [{
-        "type": "image",
-        "id": "65029669-b1cc-445e-a6e2-b89d88fee7e6",
-        "asset": "0",
-        "info": {"editorName": "looseBg"}
-      }]
+      "children": [
+        {
+          "type": "image",
+          "id": "65029669-b1cc-445e-a6e2-b89d88fee7e6",
+          "asset": "0",
+          "info": {"editorName": "looseBg"}
+        },
+        {
+          "type": "image",
+          "id": "646bb572-4466-4ff7-9cf5-91e7d85157fb",
+          "asset": "1",
+          "info": {
+            "editorName": "reloadBtn",
+            "x": 271,
+            "y": 626
+          }
+        }
+      ]
     }
   },
   "type": "STATE",
-  "asset-table": {"0": {
-    "file": "WebContent/assets/pack.json",
-    "section": "graphics",
-    "asset": "looseBg"
-  }},
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "graphics",
+      "asset": "looseBg"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "graphics",
+      "asset": "reloadBtn"
+    }
+  },
   "prefab-table": {}
 }
