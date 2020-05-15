@@ -61,6 +61,7 @@ window.onload = function() {
 	// game.state.add("Menu", Menu);
 	// game.state.add("Preload", Preload);
 	game.state.add("Level3", Level3);
+	game.state.add("looseScreen", looseScreen);
 
 
 	game.state.add("Intro", Intro);

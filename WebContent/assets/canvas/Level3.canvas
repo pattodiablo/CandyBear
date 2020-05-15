@@ -70,8 +70,8 @@
           "info": {
             "editorName": "chickRoomUp",
             "editorField": true,
-            "x": 477,
-            "y": 672,
+            "x": 480,
+            "y": 680,
             "alpha": 0,
             "body": {
               "type": "ARCADE_RECT",
@@ -174,7 +174,7 @@
           "id": "35346f84-f4d7-48e2-be28-d9e684db9a61",
           "asset": "4",
           "info": {
-            "editorName": "lamp3",
+            "editorName": "lamp4",
             "x": 16,
             "y": 573
           }
@@ -197,22 +197,6 @@
             "editorName": "lamp1",
             "x": 425,
             "y": 244
-          }
-        },
-        {
-          "type": "prefab",
-          "prefab": "1",
-          "id": "556f125a-4761-4fe3-8853-b1bda8f1da99",
-          "asset-ref": {
-            "file": "WebContent/assets/pack.json",
-            "section": "animations",
-            "asset": "atlas6",
-            "sprite": "lamp instancia 10000"
-          },
-          "info": {
-            "editorName": "lamp2",
-            "x": 590,
-            "y": 531
           }
         },
         {
@@ -413,7 +397,22 @@
             "x": -246,
             "y": -59,
             "setAll": [],
-            "children": []
+            "children": [{
+              "type": "prefab",
+              "prefab": "1",
+              "id": "f3e60d7b-9039-4bb8-a5e8-2d8bebd87403",
+              "asset-ref": {
+                "file": "WebContent/assets/pack.json",
+                "section": "animations",
+                "asset": "atlas2",
+                "sprite": "idle0000"
+              },
+              "info": {
+                "editorName": "idle",
+                "x": 604,
+                "y": 790
+              }
+            }]
           }
         },
         {
@@ -1710,7 +1709,7 @@
   },
   "prefab-table": {
     "0": "WebContent/assets/prefabs/chickBear.canvas",
-    "1": "WebContent/assets/prefabs/lamp.canvas",
+    "1": "WebContent/assets/prefabs/zombie2.canvas",
     "2": "WebContent/assets/prefabs/lifeBar.canvas",
     "3": "WebContent/assets/prefabs/ascensor.canvas",
     "4": "WebContent/assets/prefabs/player.canvas",

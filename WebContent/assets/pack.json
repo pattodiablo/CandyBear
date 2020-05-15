@@ -645,6 +645,17 @@
       "key": "bullet2",
       "url": "assets/images/bullet2.png",
       "overwrite": false
+    },
+    {
+      "type": "script",
+      "key": "looseScreen",
+      "url": "assets/canvas/looseScreen.js"
+    },
+    {
+      "type": "image",
+      "key": "looseBg",
+      "url": "assets/images/looseBg.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -790,7 +801,7 @@
     }
   ],
   "meta": {
-    "generated": "1589400741091",
+    "generated": "1589557381207",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
