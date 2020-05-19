@@ -37,7 +37,7 @@ winScreen.prototype.preload = function () {
 winScreen.prototype.create = function () {
 	this.add.sprite(0.0, 0.0, 'winBg');
 	
-	var _playBtn = this.add.sprite(266.0, 659.0, 'playBtn');
+	var _playBtn = this.add.sprite(266.0, 970.0, 'playBtn');
 	
 	
 	
@@ -59,7 +59,7 @@ winScreen.prototype.myCreate = function(){
 	this.fPlayBtn.events.onInputDown.add(this.reloadGame, this);
 
 	var bounce=this.game.add.tween(this.fPlayBtn);
-	bounce.to({ y: 625 }, 500, Phaser.Easing.Bounce.Out);	  
+	bounce.to({ y: 777 }, 500, Phaser.Easing.Bounce.Out);	  
   	bounce.start();
 
 };
