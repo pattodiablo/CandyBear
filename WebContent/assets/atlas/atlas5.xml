@@ -26,31 +26,31 @@
 	<SubTexture name="cliente20004" x="903" y="2" width="32" height="52"/>
 	<SubTexture name="cliente20005" x="937" y="2" width="32" height="52"/>
 	<SubTexture name="cliente20006" x="971" y="2" width="32" height="52"/>
-	<SubTexture name="cliente20007" x="2" y="56" width="32" height="52"/>
-	<SubTexture name="cliente20008" x="36" y="56" width="32" height="52"/>
-	<SubTexture name="cliente20009" x="70" y="56" width="32" height="52"/>
-	<SubTexture name="cliente20010" x="104" y="56" width="32" height="52"/>
-	<SubTexture name="cliente20011" x="138" y="56" width="32" height="52"/>
-	<SubTexture name="cliente20012" x="172" y="56" width="32" height="52"/>
-	<SubTexture name="cliente20013" x="206" y="56" width="32" height="52"/>
-	<SubTexture name="cliente20014" x="240" y="56" width="32" height="52"/>
-	<SubTexture name="cliente20015" x="274" y="56" width="32" height="52"/>
-	<SubTexture name="cliente20016" x="308" y="56" width="32" height="52"/>
-	<SubTexture name="cliente30000" x="342" y="56" width="32" height="47" pivotX="14.5" pivotY="24.3"/>
-	<SubTexture name="cliente30001" x="376" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30002" x="410" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30003" x="444" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30004" x="478" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30005" x="512" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30006" x="546" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30007" x="580" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30008" x="614" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30009" x="648" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30010" x="682" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30011" x="716" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30012" x="750" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30013" x="784" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30014" x="818" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30015" x="852" y="56" width="32" height="47"/>
-	<SubTexture name="cliente30016" x="886" y="56" width="32" height="47"/>
+	<SubTexture name="cliente20007" x="1005" y="2" width="32" height="52"/>
+	<SubTexture name="cliente20008" x="1039" y="2" width="32" height="52"/>
+	<SubTexture name="cliente20009" x="2" y="56" width="32" height="52"/>
+	<SubTexture name="cliente20010" x="36" y="56" width="32" height="52"/>
+	<SubTexture name="cliente20011" x="70" y="56" width="32" height="52"/>
+	<SubTexture name="cliente20012" x="104" y="56" width="32" height="52"/>
+	<SubTexture name="cliente20013" x="138" y="56" width="32" height="52"/>
+	<SubTexture name="cliente20014" x="172" y="56" width="32" height="52"/>
+	<SubTexture name="cliente20015" x="206" y="56" width="32" height="52"/>
+	<SubTexture name="cliente20016" x="240" y="56" width="32" height="52"/>
+	<SubTexture name="cliente30000" x="274" y="56" width="43" height="52" pivotX="19.95" pivotY="28.75"/>
+	<SubTexture name="cliente30001" x="319" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30002" x="364" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30003" x="409" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30004" x="454" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30005" x="499" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30006" x="544" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30007" x="589" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30008" x="634" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30009" x="679" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30010" x="724" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30011" x="769" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30012" x="814" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30013" x="859" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30014" x="904" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30015" x="949" y="56" width="43" height="52"/>
+	<SubTexture name="cliente30016" x="994" y="56" width="43" height="52"/>
 </TextureAtlas>
