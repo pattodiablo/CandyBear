@@ -16,7 +16,12 @@
 <script src="assets/canvas/Intro.js"></script>
 <script src="assets/canvas/GameSounds.js"></script>
 <script src="assets/canvas/Instructions.js"></script>
-
+<script type="text/javascript">
+	
+	document.addEventListener('touchstart', function(event){
+    event.preventDefault();
+}, {passive: false});
+</script>
 <style>
 body {
 	background: #000;
