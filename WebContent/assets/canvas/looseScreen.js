@@ -59,7 +59,7 @@ looseScreen.prototype.myCreate = function(){
 	this.fReloadBtn.events.onInputDown.add(this.reloadGame, this);
 
 	var bounce=this.game.add.tween(this.fReloadBtn);
-	bounce.to({ y: 625 }, 500, Phaser.Easing.Bounce.Out);	  
+	bounce.to({ y: 771 }, 500, Phaser.Easing.Bounce.Out);	  
   	bounce.start();
 
 };
