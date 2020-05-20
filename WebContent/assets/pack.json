@@ -815,10 +815,20 @@
       "type": "script",
       "key": "lamp",
       "url": "assets/prefabs/lamp.js"
+    },
+    {
+      "type": "script",
+      "key": "client2",
+      "url": "assets/prefabs/client2.js"
+    },
+    {
+      "type": "script",
+      "key": "client3",
+      "url": "assets/prefabs/client3.js"
     }
   ],
   "meta": {
-    "generated": "1589560928146",
+    "generated": "1589994907242",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
