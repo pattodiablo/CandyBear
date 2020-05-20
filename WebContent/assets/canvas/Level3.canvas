@@ -91,6 +91,7 @@
           },
           "info": {
             "editorName": "chick",
+            "editorField": true,
             "x": 575,
             "y": 747
           }
