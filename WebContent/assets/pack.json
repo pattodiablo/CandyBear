@@ -673,6 +673,30 @@
       "key": "winBg",
       "url": "assets/images/winBg.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "cover",
+      "url": "assets/images/cover.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "cover2",
+      "url": "assets/images/cover2.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "cover3",
+      "url": "assets/images/cover3.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "snowflakes",
+      "url": "assets/images/snowflakes.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -815,10 +839,20 @@
       "type": "script",
       "key": "lamp",
       "url": "assets/prefabs/lamp.js"
+    },
+    {
+      "type": "script",
+      "key": "client2",
+      "url": "assets/prefabs/client2.js"
+    },
+    {
+      "type": "script",
+      "key": "client3",
+      "url": "assets/prefabs/client3.js"
     }
   ],
   "meta": {
-    "generated": "1589560928146",
+    "generated": "1590029886172",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
