@@ -55,15 +55,15 @@
               "loop": true,
               "autoPlay": true,
               "frames": [
-                "walk0000",
-                "walk0001",
-                "walk0002",
-                "walk0003",
-                "walk0004",
-                "walk0005",
-                "walk0006",
-                "walk0007",
-                "walk0008"
+                "idle20000",
+                "idle20001",
+                "idle20002",
+                "idle20003",
+                "idle20004",
+                "idle20005",
+                "idle20006",
+                "idle20007",
+                "idle20008"
               ]
             },
             {
@@ -72,15 +72,15 @@
               "loop": true,
               "field": true,
               "frames": [
-                "walk0000",
-                "walk0001",
-                "walk0002",
-                "walk0003",
-                "walk0004",
-                "walk0005",
-                "walk0006",
-                "walk0007",
-                "walk0008"
+                "walk20000",
+                "walk20001",
+                "walk20002",
+                "walk20003",
+                "walk20004",
+                "walk20005",
+                "walk20006",
+                "walk20007",
+                "walk20008"
               ]
             }
           ],
@@ -89,7 +89,7 @@
             "collideWorldBounds": true,
             "gravityY": 980,
             "width": 80,
-            "height": 114.6510238647461
+            "height": 109.80585479736328
           }
         }
       }]
@@ -100,7 +100,7 @@
     "file": "WebContent/assets/pack.json",
     "section": "animations",
     "asset": "atlas2",
-    "sprite": "walk0000"
+    "sprite": "walk20000"
   }},
   "prefab-table": {}
 }

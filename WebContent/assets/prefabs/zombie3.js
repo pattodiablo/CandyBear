@@ -15,16 +15,17 @@
  * @param {any} aFrame If this Sprite is using part of a sprite sheet or texture atlas you can specify the exact frame to use by giving a string or numeric index.
  */
 function zombie3(aGame, aX, aY, aKey, aFrame) {
-	Phaser.Sprite.call(this, aGame, aX, aY, aKey || 'atlas2', aFrame == undefined || aFrame == null? 'walk0000' : aFrame);
+	Phaser.Sprite.call(this, aGame, aX, aY, aKey || 'atlas2', aFrame == undefined || aFrame == null? 'walk20000' : aFrame);
 	this.scale.set(0.5, 0.5);
 	this.anchor.set(0.5, 0.5);
-	var _anim_idle = this.animations.add('idle', ['walk0000', 'walk0001', 'walk0002', 'walk0003', 'walk0004', 'walk0005', 'walk0006', 'walk0007', 'walk0008'], 12, true);
-	this.animations.add('walking', ['walk0000', 'walk0001', 'walk0002', 'walk0003', 'walk0004', 'walk0005', 'walk0006', 'walk0007', 'walk0008'], 12, true);
+	var _anim_idle = this.animations.add('idle', ['idle20000', 'idle20001', 'idle20002', 'idle20003', 'idle20004', 'idle20005', 'idle20006', 'idle20007', 'idle20008'], 12, true);
+	this.animations.add('walking', ['walk20000', 'walk20001', 'walk20002', 'walk20003', 'walk20004', 'walk20005', 'walk20006', 'walk20007', 'walk20008'], 12, true);
 	_anim_idle.play();
 	this.game.physics.arcade.enable(this);
-	this.body.setSize(80.0, 114.6510238647461);
+	this.body.setSize(80.0, 109.80585479736328);
 	this.body.collideWorldBounds = true;
 	this.body.gravity.y = 980.0;
+	this.zombieVelo = 20;
 	
 		this.afterCreate();
 	
@@ -91,10 +92,10 @@ zombie3.prototype.addZombietoPlatform = function(me,platform){
 	}
 	
 	if(platform.data.direction){
-		this.body.velocity.x=15;
+		this.body.velocity.x=this.zombieVelo;
 		this.scale.x =0.5; 
 	}else{
-		this.body.velocity.x=-15;
+		this.body.velocity.x=-this.zombieVelo;
 		this.scale.x =-0.5; 
 	}
 }
