@@ -849,10 +849,15 @@
       "type": "script",
       "key": "client3",
       "url": "assets/prefabs/client3.js"
+    },
+    {
+      "type": "script",
+      "key": "zombie3",
+      "url": "assets/prefabs/zombie3.js"
     }
   ],
   "meta": {
-    "generated": "1590029886172",
+    "generated": "1590079527182",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
