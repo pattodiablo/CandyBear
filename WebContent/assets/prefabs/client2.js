@@ -42,7 +42,12 @@ client2.prototype.myCreate = function() {
 	//this.oldPos = this.parent.children.indexOf(this);
 	this.orderTime = null;
 	this.orderBG = null;
-	this.waitTime = 20;
+
+	this.waitTime = 20-this.game.state.getCurrentState﻿().level;
+	if(this.waitTime <= 8){
+		this.waitTime = 8;
+	}
+	console.log('this.waitTime '+ this.waitTime );
 	this.velocidadCliente = this.body.velocity.x;
 	
 	
