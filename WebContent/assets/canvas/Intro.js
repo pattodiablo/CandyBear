@@ -36,9 +36,25 @@ Intro.prototype.preload = function () {
 	
 	this.myPreload();
 	
+	this.load.pack('graphics', 'assets/pack.json');
+	
 };
 
 Intro.prototype.create = function () {
+	this.add.sprite(0.0, 0.0, 'backgorund');
+	
+	this.add.sprite(0.0, 0.0, 'cover');
+	
+	var _cover1 = this.add.sprite(320.0, 14.0, 'cover2');
+	_cover1.anchor.set(0.5, 0.5);
+	
+	this.add.sprite(0.0, 0.0, 'cover3');
+	
+	
+	
+	// fields
+	
+	this.fCover1 = _cover1;
 	
 	
 	this.myCreate();
@@ -61,7 +77,7 @@ Intro.prototype.myPreload = function () {
 	
 
 	
-		this.game.load.image('cover', 'assets/images/cover.png');
+	
 };
 
 
@@ -74,14 +90,40 @@ Intro.prototype.update = function () {
 
 Intro.prototype.myCreate = function () {
 	
+	   mid_emitter = this.game.add.emitter(this.game.world.centerX, -32, 250);
+	    mid_emitter.makeParticles('snowflakes', [0, 1, 2, 3, 4, 5]);
+	    mid_emitter.maxParticleScale = 1.2;
+	    mid_emitter.minParticleScale = 0.8;
+	    mid_emitter.setYSpeed(50, 150);
+	    mid_emitter.gravity = 0;
+	    mid_emitter.width = this.game.world.width * 1.5;
+	    mid_emitter.minRotation = 0;
+	    mid_emitter.maxRotation = 40;
 
-var sprite = this.game.add.sprite(this.game.width/2, this.game.height/2, 'cover');
-
-	sprite.anchor.setTo(0.5,0.5);
-
-
-
-
+	    
+	    mid_emitter.start(false, 12000, 100);
+	
+	cover1Move = this.game.add.tween(this.fCover1);
+	cover1Move.to({y:480}, 1000, Phaser.Easing.Bounce.Out);
+	cover1Move.onComplete.add(zoom1, this);
+	cover1Move.start();
+	    
+	function zoom1(){
+		
+		 cover2Move = this.game.add.tween(this.fCover1.scale);
+		 cover2Move.to({x: 1, y:1}, 1000, Phaser.Easing.Linear.None);
+		 cover2Move.onComplete.addOnce(zoom2, this);
+		 cover2Move.start();
+	}
+	
+	 
+	 function zoom2(){
+		 
+		 cover3Move = this.game.add.tween(this.fCover1.scale);
+		 cover3Move.to({x: 1.1, y:1.1}, 1000, Phaser.Easing.Linear.None);
+		 cover3Move.onComplete.addOnce(zoom1, this);
+		 cover3Move.start();
+	 }
 
 
 	IntroMusic = this.game.add.audio('IntroMusic');

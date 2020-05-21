@@ -600,9 +600,7 @@
           "id": "75b337e2-78d4-43ef-8938-43f46989b4d7",
           "info": {
             "editorName": "storeGroup",
-            "editorPick": false,
             "editorField": true,
-            "editorShow": false,
             "x": -97,
             "y": 174,
             "setAll": [],

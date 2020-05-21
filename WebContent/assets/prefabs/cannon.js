@@ -43,7 +43,7 @@ cannon.prototype.myCreate = function() {
 	
 	this.upgrading = false;
 	this.cannonlevel = 1;
-	this.upgradeCost = 30*this.cannonlevel;
+	this.upgradeCost = 45;
 	this.fireRate = 1000;
 	
 	this.shoot =  false;
@@ -90,7 +90,7 @@ cannon.prototype.upgradeLevel = function() {
 			this.checkCannonLevel();
 		}, this);
 	
-	 this.upgradeCost = 30*this.cannonlevel;
+	 this.upgradeCost *= this.cannonlevel;
 	
 }
 
