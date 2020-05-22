@@ -32,7 +32,7 @@
       0,
       0
     ],
-    "autoLoad": true,
+    "autoLoad": false,
     "preloadSpriteId": "",
     "preloadSprite_direction": 0,
     "load.pack": []
