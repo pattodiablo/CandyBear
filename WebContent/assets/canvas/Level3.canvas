@@ -427,7 +427,7 @@
             "editorName": "menuBtn",
             "editorField": true,
             "x": 580,
-            "y": 19,
+            "y": 12,
             "fixedToCamera": true
           }
         },
