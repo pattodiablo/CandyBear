@@ -697,6 +697,18 @@
       "key": "snowflakes",
       "url": "assets/images/snowflakes.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "cookSteps",
+      "url": "assets/images/cookSteps.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "helpBtn",
+      "url": "assets/images/helpBtn.png",
+      "overwrite": false
     }
   ],
   "Fonts": [{
@@ -857,7 +869,7 @@
     }
   ],
   "meta": {
-    "generated": "1590079527182",
+    "generated": "1590166015124",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
