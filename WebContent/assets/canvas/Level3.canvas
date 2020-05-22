@@ -59,6 +59,7 @@
           "asset": "1",
           "info": {
             "editorName": "chickRoom",
+            "editorField": true,
             "x": 478,
             "y": 671
           }
@@ -1221,6 +1222,28 @@
                   "x": 402,
                   "y": 674
                 }
+              },
+              {
+                "type": "image",
+                "id": "ee4024c8-8302-448e-b44c-3c378e47b0ae",
+                "asset": "34",
+                "info": {
+                  "editorName": "helpBtn",
+                  "editorField": true,
+                  "x": 156,
+                  "y": 249
+                }
+              },
+              {
+                "type": "image",
+                "id": "9ce235a7-83fd-4178-be09-234d875c1568",
+                "asset": "35",
+                "info": {
+                  "editorName": "cookSteps",
+                  "editorField": true,
+                  "x": 103,
+                  "y": 18
+                }
               }
             ]
           }
@@ -1228,7 +1251,7 @@
         {
           "type": "image",
           "id": "564a72fa-89f2-4674-af7d-3ad7c91f98ce",
-          "asset": "34",
+          "asset": "36",
           "info": {
             "editorName": "elevatorInn",
             "editorField": true,
@@ -1241,7 +1264,7 @@
         {
           "type": "image",
           "id": "5ed3e85f-d6a6-45a8-a402-214e80835994",
-          "asset": "35",
+          "asset": "37",
           "info": {
             "editorName": "upgradeCannon",
             "editorField": true,
@@ -1265,7 +1288,7 @@
         {
           "type": "image",
           "id": "dd59bbbc-8112-4552-a5c0-b5e0e80bab84",
-          "asset": "36",
+          "asset": "38",
           "info": {
             "editorName": "elevatorOut",
             "editorField": true,
@@ -1278,7 +1301,7 @@
         {
           "type": "image",
           "id": "d3f0b988-32db-4244-a568-2a9e58c003e0",
-          "asset": "37",
+          "asset": "39",
           "info": {
             "editorName": "changeDirBtn",
             "editorPick": false,
@@ -1291,7 +1314,7 @@
         {
           "type": "atlas-sprite",
           "id": "f39e1c6e-191e-4df6-a49b-f11acf2a3e2c",
-          "asset": "38",
+          "asset": "40",
           "info": {
             "editorName": "coin",
             "x": 417,
@@ -1344,7 +1367,7 @@
               {
                 "type": "image",
                 "id": "835def20-9e36-4c1e-9833-0b1f48ffc541",
-                "asset": "39",
+                "asset": "41",
                 "info": {
                   "editorName": "cartel",
                   "x": -8,
@@ -1395,7 +1418,7 @@
         {
           "type": "atlas-sprite",
           "id": "ceda13f3-b952-47ec-894d-85c7c33523f5",
-          "asset": "40",
+          "asset": "42",
           "info": {
             "editorName": "cliente",
             "x": 319,
@@ -1418,7 +1441,7 @@
               {
                 "type": "image",
                 "id": "c457bbba-752b-4251-9e33-59abb02ba2b6",
-                "asset": "41",
+                "asset": "43",
                 "info": {
                   "editorName": "letreroSuperior",
                   "x": 211,
@@ -1444,7 +1467,7 @@
         {
           "type": "image",
           "id": "d6fc3bca-525a-4f6e-ae05-93c99dcdde03",
-          "asset": "42",
+          "asset": "44",
           "info": {
             "editorName": "greatJob",
             "editorField": true,
@@ -1455,7 +1478,7 @@
         {
           "type": "image",
           "id": "80cc45c0-2ea9-4e07-a7c2-c82738dd06b7",
-          "asset": "43",
+          "asset": "45",
           "info": {
             "editorName": "welcome",
             "editorField": true,
@@ -1642,51 +1665,61 @@
     "34": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "elevatorInn"
+      "asset": "helpBtn"
     },
     "35": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "upgradeCannon"
+      "asset": "cookSteps"
     },
     "36": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "elevatorOut"
+      "asset": "elevatorInn"
     },
     "37": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
-      "asset": "changeDirBtn"
+      "asset": "upgradeCannon"
     },
     "38": {
+      "file": "WebContent/assets/pack.json",
+      "section": "graphics",
+      "asset": "elevatorOut"
+    },
+    "39": {
+      "file": "WebContent/assets/pack.json",
+      "section": "graphics",
+      "asset": "changeDirBtn"
+    },
+    "40": {
       "file": "WebContent/assets/pack.json",
       "section": "animations",
       "asset": "atlas4",
       "sprite": "coin0000"
     },
-    "39": {
+    "41": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "cartel"
     },
-    "40": {
+    "42": {
       "file": "WebContent/assets/pack.json",
       "section": "animations",
       "asset": "atlas5",
       "sprite": "cliente10000"
     },
-    "41": {
+    "43": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "letreroSuperior"
     },
-    "42": {
+    "44": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "greatJob"
     },
-    "43": {
+    "45": {
       "file": "WebContent/assets/pack.json",
       "section": "graphics",
       "asset": "welcome"
