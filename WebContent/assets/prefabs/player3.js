@@ -55,5 +55,5 @@ player3.prototype.afterCreate = function(_anim_shooting) {
 
 player3.prototype.animationStopped = function(sprite, animation) {
 
-	this.game.state.getCurrentState﻿().shoot();
+	this.game.state.getCurrentState().shoot();
 };

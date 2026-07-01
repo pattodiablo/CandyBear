@@ -71,57 +71,50 @@ Instructions.prototype.update = function () {
 };
 
 
-Instructions.prototype.myCreate = function (instructions) {
-	this.game.sound.mute = true;
-	this.fHow.inputEnabled = true;
-	this.factor = -540; 
-	
-	this.startButton = this.game.add.button(this.factor, 855.0, 'playBtn', startGame, this, 2, 1, 0);
-	this.startButton.anchor.set(0.5);
-	
-	this.fHow.events.onInputUp.add(function(pointer) {
-		
-		console.log("clicking");
-		move1 = this.game.add.tween(this.fHow);
-		move1.onComplete.addOnce(factorChange, this);
-		move1.to({x:this.factor}, 1080, Phaser.Easing.Bounce.Out);
-		move1.start();
-		
-		
-		 pigArrives = this.game.add.tween( this.startButton);
-		    
-		    pigArrives.to({x:this.factor + 760}, 1080, Phaser.Easing.Bounce.Out);
-
-		    pigArrives.start();
-		
-		    
-		
-		function factorChange(){
-			switch (this.factor){
-			
-			case -640:
-				this.factor = 0;
-				break;
-			case 0:
-				this.factor = -640;
-				break;
-				
-			
-			}
-			
-		}
-		
-	}, this);  
-	
-	
-	function startGame(){
- 		
-		  this.game.state.start('Level3');
-	 
-	  } 
-	 
-	    
-	
-	
+Instructions.prototype.shutdown = function () {
+	if (this.previousMute !== undefined) {
+		this.game.sound.mute = this.previousMute;
+	}
 };
 
+
+Instructions.prototype.myCreate = function () {
+	this.previousMute = this.game.sound.mute;
+	this.game.sound.mute = true;
+	this.fHow.inputEnabled = true;
+	this.factor = -640;
+	this.showingHow2 = false;
+	
+	this.startButton = this.game.add.button(this.factor + 760, 855.0, 'playBtn', this.startGame, this, 2, 1, 0);
+	this.startButton.anchor.set(0.5);
+	
+	this.fHow.events.onInputUp.add(this.advanceSlide, this);
+};
+
+
+Instructions.prototype.advanceSlide = function () {
+	var move1 = this.game.add.tween(this.fHow);
+	move1.onComplete.addOnce(this.factorChange, this);
+	move1.to({x: this.factor}, 1080, Phaser.Easing.Bounce.Out);
+	move1.start();
+	
+	var pigArrives = this.game.add.tween(this.startButton);
+	pigArrives.to({x: this.factor + 760}, 1080, Phaser.Easing.Bounce.Out);
+	pigArrives.start();
+};
+
+
+Instructions.prototype.factorChange = function () {
+	if (this.factor === -640) {
+		this.factor = 0;
+		this.fHow.loadTexture('how2');
+	} else {
+		this.factor = -640;
+		this.fHow.loadTexture('how1');
+	}
+};
+
+
+Instructions.prototype.startGame = function () {
+	this.game.state.start('Level3', true, false);
+};

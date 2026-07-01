@@ -39,11 +39,12 @@ client3.prototype.myCreate = function() {
 	
 	this.collidingStore =  false;
 	this.meLargo =  false;
-	//this.oldPos = this.parent.children.indexOf(this);
+	this.yaContado = false;
+	this.oldPos = -1;
 	this.orderTime = null;
 	this.orderBG = null;
-	this.waitTime = 5-this.game.state.getCurrentState﻿().level;
-	if(this.waitTime <= 8){
+	this.waitTime = 22 - this.game.state.getCurrentState().level;
+	if(this.waitTime < 8){
 		this.waitTime = 8;
 	}
 	console.log('this.waitTime '+ this.waitTime );
@@ -69,11 +70,11 @@ client3.prototype.makeAnOrder = function() {
 	bounce.start();
 	bounce.onComplete.add(function(){
 		this.orderBG.createFlavor();
-		this.game.state.getCurrentState﻿().doingOrder =  true;
+		this.game.state.getCurrentState().doingOrder =  true;
 	}, this);
 	
 	this.game.add.existing(this.orderBG);
-	this.game.state.getCurrentState﻿().fBagDone.currentClient = this;
+	this.game.state.getCurrentState().fBagDone.currentClient = this;
 }
 
 client3.prototype.checkDistance = function() {
@@ -85,10 +86,10 @@ client3.prototype.checkDistance = function() {
 
 client3.prototype.update = function() {
 	
-	if(this.orderTime!=null){
+	if(this.orderTime!=null && !this.yaContado){
 	
 		if (this.orderTime.ms/1000 > this.waitTime){
-			this.game.state.getCurrentState﻿().ordenFallida(this.orderBG);
+			this.game.state.getCurrentState().ordenFallida(this.orderBG);
 			this.orderTime=null;
 			this.meLargo =  true;
 			
@@ -118,7 +119,7 @@ if(!this.meLargo){
 		
 	}else{
 		
-		this.collidingStore = this.game.physics.arcade.collide(this , this.game.state.getCurrentState﻿().fStore, this.makeAnOrder, null, this);
+		this.collidingStore = this.game.physics.arcade.collide(this , this.game.state.getCurrentState().fStore, this.makeAnOrder, null, this);
 		if(!this.collidingStore){
 			
 			//this.body.velocity.x = -10;
@@ -139,7 +140,7 @@ if(!this.meLargo){
 		
 		if(this.body.position.x>this.game.width+100){
 			console.log('client destroy');
-			//this.game.state.getCurrentState﻿().fClientsRemain.text--;
+			//this.game.state.getCurrentState().fClientsRemain.text--;
 			this.destroy();
 			
 		}

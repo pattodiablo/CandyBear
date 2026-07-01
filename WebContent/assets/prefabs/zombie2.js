@@ -62,14 +62,14 @@ zombie2.prototype.diceCerebro = function() {
 
 zombie2.prototype.update = function() {
 	
-this.game.physics.arcade.collide(this, this.game.state.getCurrentState﻿().fPlatforms, this.addZombietoPlatform, null, this);
+this.game.physics.arcade.collide(this, this.game.state.getCurrentState().fPlatforms, this.addZombietoPlatform, null, this);
 
 if(this.x>860){
 console.log('destroying');
-this.game.state.getCurrentState﻿().zombiesPorEliminar--;
-if(this.game.state.getCurrentState﻿().zombiesPorEliminar<=0){
+this.game.state.getCurrentState().zombiesPorEliminar--;
+if(this.game.state.getCurrentState().zombiesPorEliminar<=0){
 	console.log('ultimoZombieEliminado');
-	this.game.state.getCurrentState﻿().ultimoZobieEliminado = true;
+	this.game.state.getCurrentState().ultimoZobieEliminado = true;
 }	
 this.destroy();
 

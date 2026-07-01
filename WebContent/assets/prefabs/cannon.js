@@ -43,7 +43,7 @@ cannon.prototype.myCreate = function() {
 	
 	this.upgrading = false;
 	this.cannonlevel = 1;
-	this.upgradeCost = 45;
+	this.upgradeCost = 15;
 	this.fireRate = 1000;
 	
 	this.shoot =  false;
@@ -72,16 +72,16 @@ cannon.prototype.upgradeLevel = function() {
 	this.updating = upgradeBar1.animations.play('updating');
 	this.upgrading = true;
 	
-	this.game.state.getCurrentState﻿().fPickUpButton.tint = 0xBB2323;
-	this.game.state.getCurrentState﻿().fPickUpButton.inputEnabled = false;
-	this.game.state.getCurrentState﻿().fChangeDirBtn.tint = 0xBB2323;
-	this.game.state.getCurrentState﻿().fChangeDirBtn.inputEnabled = false;
+	this.game.state.getCurrentState().fPickUpButton.tint = 0xBB2323;
+	this.game.state.getCurrentState().fPickUpButton.inputEnabled = false;
+	this.game.state.getCurrentState().fChangeDirBtn.tint = 0xBB2323;
+	this.game.state.getCurrentState().fChangeDirBtn.inputEnabled = false;
 	
 	this.updating.onComplete.add(function(){
-		this.game.state.getCurrentState﻿().fPickUpButton.tint = 0xFFFFFF;
-		this.game.state.getCurrentState﻿().fPickUpButton.inputEnabled = true;
-		this.game.state.getCurrentState﻿().fChangeDirBtn.tint = 0xFFFFFF;
-		this.game.state.getCurrentState﻿().fChangeDirBtn.inputEnabled = true;
+		this.game.state.getCurrentState().fPickUpButton.tint = 0xFFFFFF;
+		this.game.state.getCurrentState().fPickUpButton.inputEnabled = true;
+		this.game.state.getCurrentState().fChangeDirBtn.tint = 0xFFFFFF;
+		this.game.state.getCurrentState().fChangeDirBtn.inputEnabled = true;
 		 this.upgrading =  false;
 		 this.cannonlevel ++;
 		 this.weapon.fireRate = 1000/this.cannonlevel;
@@ -90,7 +90,7 @@ cannon.prototype.upgradeLevel = function() {
 			this.checkCannonLevel();
 		}, this);
 	
-	 this.upgradeCost *= this.cannonlevel;
+	 this.upgradeCost += 10;
 	
 }
 
@@ -160,10 +160,10 @@ cannon.prototype.update = function() {
 		}
 	
 	
-	//this.colliden = this.game.physics.arcade.collide(this , this.game.state.getCurrentState﻿().fPlatforms, this.fireIfZombie, null, this);
+	this.game.physics.arcade.collide(this, this.game.state.getCurrentState().fPlatforms, this.fireIfZombie, null, this);
 
-	this.game.physics.arcade.overlap(this.weapon.bullets, this.game.state.getCurrentState﻿().fEnemies, this.game.state.getCurrentState﻿().hitEnemy, null, this);
-	this.game.physics.arcade.overlap(this.weapon.bullets, this.game.state.getCurrentState﻿().fPlatforms, this.game.state.getCurrentState﻿().hitWall, null, this);
+	this.game.physics.arcade.overlap(this.weapon.bullets, this.game.state.getCurrentState().fEnemies, this.game.state.getCurrentState().hitEnemy, null, this);
+	this.game.physics.arcade.overlap(this.weapon.bullets, this.game.state.getCurrentState().fPlatforms, this.game.state.getCurrentState().hitWall, null, this);
 
 	
 }

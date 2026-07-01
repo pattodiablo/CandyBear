@@ -1,8 +1,8 @@
 window.onload = function() {
 	
 		//var Pixelratio = window.screen.availWidth / 640;
-	  var width = 640  ;﻿﻿﻿
-	  var height = 960 ;
+	  var width = 640  ;
+var height = 960 ;
 	  var firstRunLandscape = false;
 	  
 	console.log("pixel ratio "+  window.devicePixelRatio); 
@@ -181,6 +181,7 @@ window.onload = function() {
 	game.state.add("looseScreen", looseScreen);
 	game.state.add("winScreen", winScreen);
 	game.state.add("Intro", Intro);
+	game.state.add("Instructions", Instructions);
 
 	game.state.start("Boot",true,true);
 

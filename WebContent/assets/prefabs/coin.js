@@ -51,9 +51,10 @@ coin.prototype.timed = function() {
 	
 	this.bool=true;
 	this.timer = this.game.time.create(false);
-    this.timer.loop(15000, function(){
-    	this.destroy();
-    	
+    this.timer.add(15000, function(){
+    	if (this.alive) {
+    		this.destroy();
+    	}
     }, this);
     this.timer.start();
     

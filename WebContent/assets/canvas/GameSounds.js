@@ -18,7 +18,7 @@ GameSounds.prototype.constructor = GameSounds;
 
 GameSounds.prototype.preload = function (game) {
 	
-	game.load.audio('IntroMusic', ['assets/audio/IntroMusic.mp3','assets/audio/IntroMusic.ogg']);
+	game.load.audio('IntroMusic', ['assets/audio/introMusic.mp3','assets/audio/introMusic.ogg']);
 
 	
 };

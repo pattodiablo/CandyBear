@@ -55,7 +55,7 @@ player.prototype.afterCreate = function(_anim_shooting) {
 	this.myWeapons = 0;
 	this.myCannons = 0;
 	this.myCannonsUpgrades = [];
-	this.myCoins = 10;
+	this.myCoins = 20;
 	this.hasKey = false;
 	this.hasPistol =  false;
 	this.animations.play('idle');	
@@ -73,18 +73,18 @@ player.prototype.afterCreate = function(_anim_shooting) {
 
 player.prototype.animationStopped = function(sprite, animation) {
 
-	this.game.state.getCurrentState﻿().shoot();
+	this.game.state.getCurrentState().shoot();
 };
 player.prototype.ballModeSwitch = function() {
 	if(this.hasBallMode){
 
 		if(this.ballMode){
-			this.alpha=0;
-			this.playerBall.alpha = 100;
+			this.alpha = 0;
+			this.playerBall.alpha = 1;
 			 this.enableObstacleCollide = false;
 		}else{
 			
-			this.alpha=100;
+			this.alpha = 1;
 			this.playerBall.alpha = 0;
 			 this.enableObstacleCollide = true;
 		}
@@ -97,6 +97,6 @@ player.prototype.update = function() {
 	this.playerBall.y=this.y+13;
 	this.playerBall.body.angularVelocity=900*Math.sign(this.body.velocity.x);
 	
-	//this.game.physics.arcade.collide(this.playerBall , this.game.state.getCurrentState﻿().fPlatforms);
+	//this.game.physics.arcade.collide(this.playerBall , this.game.state.getCurrentState().fPlatforms);
 };
 

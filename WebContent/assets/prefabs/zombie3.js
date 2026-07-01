@@ -25,6 +25,8 @@ function zombie3(aGame, aX, aY, aKey, aFrame) {
 	this.body.setSize(80.0, 111.4209213256836);
 	this.body.collideWorldBounds = true;
 	this.body.gravity.y = 980.0;
+	this.currentPlatform = null;
+	this.isNewPlatform = false;
 	
 		this.afterCreate();
 	
@@ -60,14 +62,14 @@ zombie3.prototype.diceCerebro = function() {
 
 zombie3.prototype.update = function() {
 	
-this.game.physics.arcade.collide(this, this.game.state.getCurrentState﻿().fPlatforms, this.addZombietoPlatform, null, this);
+this.game.physics.arcade.collide(this, this.game.state.getCurrentState().fPlatforms, this.addZombietoPlatform, null, this);
 
 if(this.x>860){
 console.log('destroying');
-this.game.state.getCurrentState﻿().zombiesPorEliminar--;
-if(this.game.state.getCurrentState﻿().zombiesPorEliminar<=0){
+this.game.state.getCurrentState().zombiesPorEliminar--;
+if(this.game.state.getCurrentState().zombiesPorEliminar<=0){
 	console.log('ultimoZombieEliminado');
-	this.game.state.getCurrentState﻿().ultimoZobieEliminado = true;
+	this.game.state.getCurrentState().ultimoZobieEliminado = true;
 }	
 this.destroy();
 

@@ -66,5 +66,5 @@ winScreen.prototype.myCreate = function(){
 
 
 winScreen.prototype.reloadGame = function(){
-	this.game.state.start("Level3",true,true);
+	this.game.state.start("Level3", true, false);
 };

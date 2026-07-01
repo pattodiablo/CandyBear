@@ -50,6 +50,6 @@ lifeBar.prototype.myCreate = function() {
 
 lifeBar.prototype.update = function() {
 
-	this.lifebar.width = ((this.game.state.getCurrentState﻿().fPlayer.life*100)/  this.barWidth)*this.barWidth/85;
+	this.lifebar.width = ((this.game.state.getCurrentState().fPlayer.life*100)/  this.barWidth)*this.barWidth/85;
 
 }
