@@ -567,6 +567,22 @@ Level3.prototype.calcularDificultadNoche = function () {
 	var escalaMaxZombie = Math.min(1.5, 1.08 + progreso * 0.38 + rampaTemprana * 0.12);
 	var escalaMinGigante = Math.min(escalaMaxZombie, 1.1 + progreso * 0.08);
 
+	var chanceZombieRapido = Math.min(0.45, 0.14 + progreso * 0.2 + rampaTemprana * 0.1);
+	var escalaMinRapido = Math.max(0.62, 0.7 - progreso * 0.04);
+	var escalaMaxRapido = 0.86;
+	var velocidadMinRapida = 1.28 + progreso * 0.08;
+	var velocidadMaxRapida = Math.min(1.65, 1.45 + progreso * 0.15 + rampaTemprana * 0.05);
+
+	var spawnLineal = 7000 - progreso * 5800 - rampaTemprana * 1800;
+	var intervaloSpawnZombieMin = Math.round(Math.max(
+		550,
+		spawnLineal * (1 + onda * 0.18) - 1000
+	));
+	var intervaloSpawnZombieMax = Math.round(Math.max(
+		intervaloSpawnZombieMin + 300,
+		spawnLineal * (1 + onda * 0.18) + 900
+	));
+
 	var intervaloMonedasMin = Math.round(Math.max(1200, 3800 - progreso * 2200 + onda * 250));
 	var intervaloMonedasMax = Math.round(Math.max(
 		intervaloMonedasMin + 500,
@@ -587,6 +603,13 @@ Level3.prototype.calcularDificultadNoche = function () {
 		chanceZombieGigante: chanceZombieGigante,
 		escalaMinGigante: escalaMinGigante,
 		escalaMaxZombie: escalaMaxZombie,
+		chanceZombieRapido: chanceZombieRapido,
+		escalaMinRapido: escalaMinRapido,
+		escalaMaxRapido: escalaMaxRapido,
+		velocidadMinRapida: velocidadMinRapida,
+		velocidadMaxRapida: velocidadMaxRapida,
+		intervaloSpawnZombieMin: intervaloSpawnZombieMin,
+		intervaloSpawnZombieMax: intervaloSpawnZombieMax,
 		intervaloMonedasMin: intervaloMonedasMin,
 		intervaloMonedasMax: intervaloMonedasMax,
 		monedasActivasMax: monedasActivasMax,
@@ -2975,35 +2998,58 @@ Level3.prototype.prepararZombies = function (estado) {
 			console.log('botar zombies');
 
 			if(this.zombiesListos.length >= 1){
-
-		
-    	this.creaZombie = this.game.time.create(false); //crear zombies
-
-   		this.creaZombie.loop(Math.random()*10000, function(){
-
-   			 //si existen preclientes entonces los creo
-				console.log('anunciandoZombies');
-   				var clienteNuevo = this.zombiesListos.pop(); //elimino un prezombie
-   				this.crearUnZombie(); //creo un zombie
-
-
-   		}, this);
-	}else{
+				this.programarSiguienteZombie();
+			}else{
 
 			this.siguienteFaseZombies =  true;
    			console.log('no hay mas zombies'); //que hacer cuando no hay mas clientes
    				
    			}
-    	if(this.creaZombie){
-   	this.creaZombie.start();
-   	}
-
-
-
 
 		}
 	
 }
+
+Level3.prototype.obtenerDelaySpawnZombie = function () {
+
+	var dificultad = this.dificultadActual || this.calcularDificultadNoche();
+	var rango = dificultad.intervaloSpawnZombieMax - dificultad.intervaloSpawnZombieMin;
+
+	return dificultad.intervaloSpawnZombieMin + Math.floor(Math.random() * (rango + 1));
+
+};
+
+Level3.prototype.programarSiguienteZombie = function () {
+
+	if (!this.zombiesListos.length) {
+		this.siguienteFaseZombies = true;
+		return;
+	}
+
+	if (this.creaZombie) {
+		this.creaZombie.destroy();
+	}
+
+	var delay = this.obtenerDelaySpawnZombie();
+
+	this.creaZombie = this.game.time.create(false);
+	this.creaZombie.add(delay, function () {
+
+		if (this.zombiesListos.length >= 1) {
+			this.zombiesListos.pop();
+			this.crearUnZombie();
+		}
+
+		if (this.zombiesListos.length >= 1) {
+			this.programarSiguienteZombie();
+		} else {
+			this.siguienteFaseZombies = true;
+		}
+
+	}, this);
+	this.creaZombie.start();
+
+};
 
 Level3.prototype.prepararClientes = function (estado) {
 
@@ -3092,25 +3138,31 @@ Level3.prototype.crearUnCliente = function () {
 Level3.prototype.aplicarVarianteZombie = function (zombie, dificultad) {
 
 	var sizeScale = 1;
+	var speedScale = 1;
+	var roll = Math.random();
 
-	if (Math.random() < dificultad.chanceZombieGigante) {
+	if (roll < dificultad.chanceZombieGigante) {
 		sizeScale = dificultad.escalaMinGigante +
 			Math.random() * (dificultad.escalaMaxZombie - dificultad.escalaMinGigante);
+		zombie.esGigante = true;
+		zombie.life *= 1 + (sizeScale - 1) * 0.55;
+	} else if (roll < dificultad.chanceZombieGigante + dificultad.chanceZombieRapido) {
+		sizeScale = dificultad.escalaMinRapido +
+			Math.random() * (dificultad.escalaMaxRapido - dificultad.escalaMinRapido);
+		speedScale = dificultad.velocidadMinRapida +
+			Math.random() * (dificultad.velocidadMaxRapida - dificultad.velocidadMinRapida);
+		zombie.esRapido = true;
+		zombie.life *= 0.5 + sizeScale * 0.45;
 	}
 
 	zombie.sizeScale = sizeScale;
+	zombie.speedScale = speedScale;
 	zombie.scale.set(0.5 * sizeScale, 0.5 * sizeScale);
-
-	if (sizeScale > 1) {
-		zombie.life *= 1 + (sizeScale - 1) * 0.55;
-		zombie.esGigante = true;
-	}
 
 };
 
 Level3.prototype.crearUnZombie = function () {
 
-	this.creaZombie.destroy();
 	var xpos = 297;
 	var ypos = 384;
 	
@@ -3126,7 +3178,6 @@ Level3.prototype.crearUnZombie = function () {
 	zombie.life *= dificultad.multiplicadorVida;
 	this.aplicarVarianteZombie(zombie, dificultad);
 	this.fEnemies.add(zombie);
-	this.prepararZombies(false);
 }
 
 
