@@ -42,7 +42,7 @@ zombie2.prototype.constructor = zombie2;
 zombie2.prototype.afterCreate = function() {
 	
 	this.life=20;
-	
+	this.sizeScale = 1;
 
 	this.animations.play('walking');
 	
@@ -92,11 +92,15 @@ zombie2.prototype.addZombietoPlatform = function(me,platform){
 
 	}
 	
+	var escala = 0.5 * (this.sizeScale || 1);
+
 	if(platform.data.direction){
 		this.body.velocity.x=15;
-		this.scale.x =0.5; 
+		this.scale.x = escala;
+		this.scale.y = escala;
 	}else{
 		this.body.velocity.x=-15;
-		this.scale.x =-0.5; 
+		this.scale.x = -escala;
+		this.scale.y = escala;
 	}
 }

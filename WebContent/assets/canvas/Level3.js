@@ -546,21 +546,26 @@ Level3.prototype.calcularDificultadNoche = function () {
 
 	var amplitud = 1 - progreso * 0.55;
 	var onda = Math.sin((n - 1) * 0.85) * amplitud;
+	var rampaTemprana = Math.min(1, n / 12);
 
-	var zombiesLineal = 4 + progreso * 58;
-	var numZombies = Math.round(Math.max(4, Math.min(75, zombiesLineal * (1 + onda * 0.18))));
+	var zombiesLineal = 5 + progreso * 64 + rampaTemprana * 3;
+	var numZombies = Math.round(Math.max(5, Math.min(80, zombiesLineal * (1 + onda * 0.2))));
 
-	var vidaLineal = 0.5 + progreso * 4;
-	var multiplicadorVida = Math.max(0.5, Math.min(5.5, vidaLineal * (1 + onda * 0.12)));
+	var vidaLineal = 0.55 + progreso * 4.8 + rampaTemprana * 0.4;
+	var multiplicadorVida = Math.max(0.55, Math.min(6, vidaLineal * (1 + onda * 0.14)));
 
-	var factorCostos = Math.max(1, 1 + progreso * 1.2 + onda * 0.08);
+	var factorCostos = Math.max(1, 1 + progreso * 1.35 + onda * 0.1 + rampaTemprana * 0.08);
 	var costoUpgradeBase = Math.round(15 * factorCostos);
 	var costoUpgradeStep = Math.max(8, Math.round(10 * factorCostos));
 
 	var chanceZombie3 = 0;
 	if (n >= 4) {
-		chanceZombie3 = 0.5 + progreso * 0.25;
+		chanceZombie3 = 0.5 + progreso * 0.3 + rampaTemprana * 0.08;
 	}
+
+	var chanceZombieGigante = Math.min(0.5, 0.1 + progreso * 0.28 + rampaTemprana * 0.12);
+	var escalaMaxZombie = Math.min(1.5, 1.08 + progreso * 0.38 + rampaTemprana * 0.12);
+	var escalaMinGigante = Math.min(escalaMaxZombie, 1.1 + progreso * 0.08);
 
 	var intervaloMonedasMin = Math.round(Math.max(1200, 3800 - progreso * 2200 + onda * 250));
 	var intervaloMonedasMax = Math.round(Math.max(
@@ -579,6 +584,9 @@ Level3.prototype.calcularDificultadNoche = function () {
 		costoUpgradeCanon: costoUpgradeBase,
 		incrementoUpgradeCanon: costoUpgradeStep,
 		chanceZombie3: chanceZombie3,
+		chanceZombieGigante: chanceZombieGigante,
+		escalaMinGigante: escalaMinGigante,
+		escalaMaxZombie: escalaMaxZombie,
 		intervaloMonedasMin: intervaloMonedasMin,
 		intervaloMonedasMax: intervaloMonedasMax,
 		monedasActivasMax: monedasActivasMax,
@@ -3081,6 +3089,25 @@ Level3.prototype.crearUnCliente = function () {
 	
 
 }
+Level3.prototype.aplicarVarianteZombie = function (zombie, dificultad) {
+
+	var sizeScale = 1;
+
+	if (Math.random() < dificultad.chanceZombieGigante) {
+		sizeScale = dificultad.escalaMinGigante +
+			Math.random() * (dificultad.escalaMaxZombie - dificultad.escalaMinGigante);
+	}
+
+	zombie.sizeScale = sizeScale;
+	zombie.scale.set(0.5 * sizeScale, 0.5 * sizeScale);
+
+	if (sizeScale > 1) {
+		zombie.life *= 1 + (sizeScale - 1) * 0.55;
+		zombie.esGigante = true;
+	}
+
+};
+
 Level3.prototype.crearUnZombie = function () {
 
 	this.creaZombie.destroy();
@@ -3097,6 +3124,7 @@ Level3.prototype.crearUnZombie = function () {
 	}
 
 	zombie.life *= dificultad.multiplicadorVida;
+	this.aplicarVarianteZombie(zombie, dificultad);
 	this.fEnemies.add(zombie);
 	this.prepararZombies(false);
 }
