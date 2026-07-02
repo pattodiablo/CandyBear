@@ -43,7 +43,12 @@ cannon.prototype.myCreate = function() {
 	
 	this.upgrading = false;
 	this.cannonlevel = 1;
-	this.upgradeCost = 15;
+	var state = this.game.state.getCurrentState();
+	var dificultad = state && state.dificultadActual ?
+		state.dificultadActual :
+		{ costoUpgradeCanon: 15, incrementoUpgradeCanon: 10 };
+	this.upgradeCost = dificultad.costoUpgradeCanon;
+	this.upgradeStep = dificultad.incrementoUpgradeCanon;
 	this.fireRate = 1000;
 	
 	this.shoot =  false;
@@ -90,7 +95,10 @@ cannon.prototype.upgradeLevel = function() {
 			this.checkCannonLevel();
 		}, this);
 	
-	 this.upgradeCost += 10;
+	 var state = this.game.state.getCurrentState();
+	 var step = this.upgradeStep ||
+	 	(state && state.dificultadActual ? state.dificultadActual.incrementoUpgradeCanon : 10);
+	 this.upgradeCost += step;
 	
 }
 

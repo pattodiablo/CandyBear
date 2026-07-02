@@ -508,6 +508,318 @@ Level3.prototype.myInit = function () {
 	
 };
 
+Level3.prototype.obtenerStocksBodega = function () {
+
+	return [
+		this.getFlavorStock(this.fFlavor1),
+		this.getFlavorStock(this.fFlavor2),
+		this.getFlavorStock(this.fFlavor3),
+		this.getFlavorStock(this.fFlavor4),
+		this.getFlavorStock(this.fFlavor5),
+		this.getFlavorStock(this.fFlavor6)
+	];
+
+};
+
+Level3.prototype.aplicarStocksBodega = function (stocks) {
+
+	if (!stocks || stocks.length !== 6) {
+		return;
+	}
+
+	this.setFlavorStock(this.fFlavor1, stocks[0]);
+	this.setFlavorStock(this.fFlavor2, stocks[1]);
+	this.setFlavorStock(this.fFlavor3, stocks[2]);
+	this.setFlavorStock(this.fFlavor4, stocks[3]);
+	this.setFlavorStock(this.fFlavor5, stocks[4]);
+	this.setFlavorStock(this.fFlavor6, stocks[5]);
+
+};
+
+Level3.prototype.calcularDificultadNoche = function () {
+
+	var n = Math.max(1, this.level || 1);
+	var NIVEL_PLATEAU = 28;
+
+	var t = Math.min(1, (n - 1) / (NIVEL_PLATEAU - 1));
+	var progreso = t * t * (3 - 2 * t);
+
+	var amplitud = 1 - progreso * 0.55;
+	var onda = Math.sin((n - 1) * 0.85) * amplitud;
+
+	var zombiesLineal = 4 + progreso * 58;
+	var numZombies = Math.round(Math.max(4, Math.min(75, zombiesLineal * (1 + onda * 0.18))));
+
+	var vidaLineal = 0.5 + progreso * 4;
+	var multiplicadorVida = Math.max(0.5, Math.min(5.5, vidaLineal * (1 + onda * 0.12)));
+
+	var factorCostos = Math.max(1, 1 + progreso * 1.2 + onda * 0.08);
+	var costoUpgradeBase = Math.round(15 * factorCostos);
+	var costoUpgradeStep = Math.max(8, Math.round(10 * factorCostos));
+
+	var chanceZombie3 = 0;
+	if (n >= 4) {
+		chanceZombie3 = 0.5 + progreso * 0.25;
+	}
+
+	var intervaloMonedasMin = Math.round(Math.max(1200, 3800 - progreso * 2200 + onda * 250));
+	var intervaloMonedasMax = Math.round(Math.max(
+		intervaloMonedasMin + 500,
+		5200 - progreso * 2700 + onda * 400
+	));
+	var monedasActivasMax = Math.round(2 + progreso * 2);
+
+	return {
+		numZombies: numZombies,
+		multiplicadorVida: multiplicadorVida,
+		costoPistola: Math.round(10 * factorCostos),
+		costoCanon: Math.round(30 * factorCostos),
+		costoLlave: Math.round(270 * factorCostos),
+		costoRollo: Math.round(60 * factorCostos),
+		costoUpgradeCanon: costoUpgradeBase,
+		incrementoUpgradeCanon: costoUpgradeStep,
+		chanceZombie3: chanceZombie3,
+		intervaloMonedasMin: intervaloMonedasMin,
+		intervaloMonedasMax: intervaloMonedasMax,
+		monedasActivasMax: monedasActivasMax,
+		progreso: progreso
+	};
+
+};
+
+Level3.prototype.calcularCostoUpgradeCanon = function (cannonlevel) {
+
+	var d = this.dificultadActual || this.calcularDificultadNoche();
+	return d.costoUpgradeCanon + Math.max(0, (cannonlevel || 1) - 1) * d.incrementoUpgradeCanon;
+
+};
+
+Level3.prototype.aplicarCostosTiendaPorNivel = function () {
+
+	this.dificultadActual = this.calcularDificultadNoche();
+	var d = this.dificultadActual;
+
+	if (this.fGunValue) {
+		this.fGunValue.text = String(d.costoPistola);
+	}
+	if (this.fCannonValue) {
+		this.fCannonValue.text = String(d.costoCanon);
+	}
+	if (this.fKeyCost) {
+		this.fKeyCost.text = String(d.costoLlave);
+	}
+	if (this.fRollValue) {
+		this.fRollValue.text = String(d.costoRollo);
+	}
+
+};
+
+Level3.prototype.obtenerCannonsColocados = function () {
+
+	var colocados = [];
+	var i;
+	var cannonSprite;
+
+	for (i = 0; i < this.fCannons.children.length; i++) {
+		cannonSprite = this.fCannons.children[i];
+
+		if (cannonSprite && cannonSprite.exists !== false && cannonSprite.cannonlevel) {
+			colocados.push({
+				level: Math.min(3, Math.max(1, cannonSprite.cannonlevel)),
+				direction: cannonSprite.WeaponDir === -1 ? -1 : 1,
+				x: Math.round(cannonSprite.x),
+				y: Math.round(cannonSprite.y)
+			});
+		}
+	}
+
+	return colocados;
+
+};
+
+Level3.prototype.esPosicionCannonValida = function (x, y) {
+
+	return typeof x === 'number' && typeof y === 'number' &&
+		!isNaN(x) && !isNaN(y) &&
+		x > 40 && y > 40 &&
+		x < (this.game.width + 300) &&
+		y < (this.game.height + 300);
+
+};
+
+Level3.prototype.obtenerPosicionesCannonsGuardados = function () {
+
+	var groupX = this.fPlatforms.x;
+	var groupY = this.fPlatforms.y;
+
+	return [
+		{ x: groupX + 80, y: groupY + 353 },
+		{ x: groupX + 240, y: groupY + 353 },
+		{ x: groupX + 400, y: groupY + 353 },
+		{ x: groupX + 160, y: groupY + 145 },
+		{ x: groupX + 320, y: groupY + 248 }
+	];
+
+};
+
+Level3.prototype.crearCannonEnEscenario = function (x, y, nivel, direccion) {
+
+	var _cannon = new cannon(this.game, x, y);
+	var nivelCanon = Math.min(3, Math.max(1, nivel || 1));
+
+	if (nivelCanon > 1) {
+		_cannon.cannonlevel = nivelCanon;
+		_cannon.checkCannonLevel();
+	}
+
+	_cannon.upgradeCost = this.calcularCostoUpgradeCanon(_cannon.cannonlevel);
+
+	if (direccion === -1) {
+		_cannon.changeDirection();
+	}
+
+	this.fCannons.add(_cannon);
+
+	return _cannon;
+
+};
+
+Level3.prototype.restaurarCannonsColocados = function (placedCannons) {
+
+	if (!placedCannons || !placedCannons.length || !this.fCannons) {
+		return;
+	}
+
+	var posiciones = this.obtenerPosicionesCannonsGuardados();
+	var i;
+	var datos;
+	var pos;
+	var slot;
+
+	for (i = 0; i < placedCannons.length; i++) {
+		datos = placedCannons[i];
+
+		if (this.esPosicionCannonValida(datos.x, datos.y)) {
+			pos = { x: datos.x, y: datos.y };
+		} else {
+			slot = posiciones[i % posiciones.length] || posiciones[0];
+			pos = slot || { x: 280, y: 720 };
+		}
+
+		this.crearCannonEnEscenario(pos.x, pos.y, datos.level, datos.direction);
+	}
+
+};
+
+Level3.prototype.obtenerDatosProgreso = function () {
+
+	return {
+		coins: this.fPlayer.myCoins,
+		level: this.level,
+		hasKey: this.fPlayer.hasKey,
+		hasPistol: this.fPlayer.hasPistol,
+		hasBallMode: this.fPlayer.hasBallMode,
+		myWeapons: this.fPlayer.myWeapons,
+		myCannons: this.fPlayer.myCannons,
+		myCannonsUpgrades: this.fPlayer.myCannonsUpgrades ?
+			this.fPlayer.myCannonsUpgrades.slice() : [],
+		placedCannons: this.obtenerCannonsColocados(),
+		flavorStocks: this.obtenerStocksBodega()
+	};
+
+};
+
+Level3.prototype.cargarProgresoGuardado = function () {
+
+	var data = typeof GameSave !== 'undefined' ? GameSave.load() : null;
+
+	if (!data || !this.fPlayer) {
+		return;
+	}
+
+	this.fPlayer.myCoins = data.coins;
+	this.fPlayer.hasKey = data.hasKey;
+	this.fPlayer.hasPistol = data.hasPistol;
+	this.fPlayer.hasBallMode = data.hasBallMode;
+	this.fPlayer.myWeapons = data.myWeapons;
+	this.fPlayer.myCannons = data.myCannons;
+	this.fPlayer.myCannonsUpgrades = data.myCannonsUpgrades;
+
+	this.level = data.level;
+
+	if (this.fOleadaNumero) {
+		this.fOleadaNumero.text = String(this.level);
+	}
+
+	if (this.fPlayer.hasPistol && this.fShootBtn) {
+		this.fShootBtn.visible = true;
+	}
+
+	if (this.fPlayer.myCannons > 0 && this.fDropCannonBtn) {
+		this.fDropCannonBtn.visible = true;
+	}
+
+	if (data.flavorStocks) {
+		this.aplicarStocksBodega(data.flavorStocks);
+		this.sincronizarBodegaSabores();
+	}
+
+	this.aplicarCostosTiendaPorNivel();
+	this._placedCannonsPendientes = data.placedCannons;
+
+	if (this.fDropCannonBtn) {
+		this.fDropCannonBtn.visible = this.fPlayer.myCannons > 0;
+	}
+
+};
+
+Level3.prototype.guardarProgreso = function () {
+
+	if (!this.fPlayer || typeof GameSave === 'undefined') {
+		return;
+	}
+
+	this._ultimoProgresoGuardado = this.obtenerDatosProgreso();
+	GameSave.save(this._ultimoProgresoGuardado);
+
+};
+
+Level3.prototype.necesitaGuardarProgreso = function () {
+
+	if (!this.fPlayer) {
+		return false;
+	}
+
+	if (!this._ultimoProgresoGuardado) {
+		return true;
+	}
+
+	return JSON.stringify(this.obtenerDatosProgreso()) !==
+		JSON.stringify(this._ultimoProgresoGuardado);
+
+};
+
+Level3.prototype.iniciarAutoGuardado = function () {
+
+	var state = this;
+
+	if (this._autoGuardadoListo) {
+		return;
+	}
+
+	this._autoGuardadoListo = true;
+	this._saveTimer = 0;
+
+	this.game.state.onStateChange.add(function (fromState) {
+
+		if (fromState === 'Level3') {
+			state.guardarProgreso();
+		}
+
+	});
+
+};
+
 Level3.prototype.myPreload = function () {
 
 
@@ -2540,6 +2852,10 @@ var moverAyuda = this.game.time.create(false); //animacion de pedir ayuda de la 
 
 
 	this.level = 1;
+	this.cargarProgresoGuardado();
+	this.aplicarCostosTiendaPorNivel();
+	this.guardarProgreso();
+	this.iniciarAutoGuardado();
 	this.clientesListos = [];
 	this.zombiesListos = [];
 	this.bajoAlbasement =  false;
@@ -2632,10 +2948,10 @@ Level3.prototype.prepararZombies = function (estado) {
 	console.log(estado);
 	if(estado){
 		this.puedeGanar = true;
-		console.log('preparar zombies antes de salir');	
-		var numZombies = this.level*2.5;
-		this.zombiesPorEliminar =  numZombies;
-		if(numZombies>100){numClientes=100} //maximo numero de prezombies para crear 
+		console.log('preparar zombies antes de salir');
+		var dificultad = this.calcularDificultadNoche();
+		var numZombies = dificultad.numZombies;
+		this.zombiesPorEliminar = numZombies;
 
 			for(var i = 0; i<numZombies; i++){
 				var zombies = {tipo:1}; //creo lista  de prezomvies
@@ -2771,26 +3087,16 @@ Level3.prototype.crearUnZombie = function () {
 	var xpos = 297;
 	var ypos = 384;
 	
-	var wichZombie = Math.ceil(Math.random()*2);
-	console.log('level ' + this.level);
-	if(this.level>=4){
-		switch(wichZombie){
+	var dificultad = this.calcularDificultadNoche();
+	var zombie;
 
-			case 1:
-			var zombie = new zombie2(this.game, xpos, ypos);
-			break;
-
-			case 2:
-			console.log('wichZombie ' + wichZombie);
-			var zombie = new zombie3(this.game, xpos, ypos);
-			break;
-
-		}
-	}else{
-		var zombie = new zombie2(this.game, xpos, ypos);	
+	if (this.level >= 4 && Math.random() < dificultad.chanceZombie3) {
+		zombie = new zombie3(this.game, xpos, ypos);
+	} else {
+		zombie = new zombie2(this.game, xpos, ypos);
 	}
 
-	zombie.life*=(this.level*0.5);
+	zombie.life *= dificultad.multiplicadorVida;
 	this.fEnemies.add(zombie);
 	this.prepararZombies(false);
 }
@@ -3046,17 +3352,30 @@ Level3.prototype.hitEnemy = function (bullet, enemy) {
 
 Level3.prototype.placeCannon = function () {
 
+	if (this.fPlayer.myCannons <= 0) {
+		return;
+	}
+
+	var nivel = 1;
+
+	if (this.fPlayer.myCannonsUpgrades.length > 0) {
+		nivel = this.fPlayer.myCannonsUpgrades.pop();
+	}
+
 	this.fPlayer.myCannons--;
 
-	var _cannon1 = new cannon(this.game, this.fPlayer.x, this.fPlayer.y-this.fPlayer.height);
-	if(this.fPlayer.myCannonsUpgrades.length>0){
-	_cannon1.cannonlevel=this.fPlayer.myCannonsUpgrades.pop();
-	_cannon1.checkCannonLevel();
-	} //coloco el mismo nivel de cannon que tenia antes
-	//_cannon1.beginFire();
-	this.fCannons.add(_cannon1);
+	this.crearCannonEnEscenario(
+		this.fPlayer.x,
+		this.fPlayer.y - this.fPlayer.height,
+		nivel,
+		1
+	);
 
+	if (this.fDropCannonBtn) {
+		this.fDropCannonBtn.visible = this.fPlayer.myCannons > 0;
+	}
 
+	this.guardarProgreso();
 
 }
 
@@ -3100,6 +3419,7 @@ Level3.prototype.isCollinding = function (player,cannon) { //is collinding with 
 			cannon.upgradeLevel();
 			player.myCoins -= cannonCost;
 			this.wannaUpgrade = false;
+			this.guardarProgreso();
 		}
 		}else{
 			this.fUpgradeCost.visible = false;
@@ -3127,6 +3447,12 @@ Level3.prototype.isCollinding = function (player,cannon) { //is collinding with 
 		this.pickUped=false;
 		player.myCannons++;
 		player.myWeapons++;
+
+		if (this.fDropCannonBtn) {
+			this.fDropCannonBtn.visible = true;
+		}
+
+		this.guardarProgreso();
 	
 	}
 
@@ -3209,46 +3535,108 @@ Level3.prototype.changeDirection = function (caja,zombie) {
 
 }
 
+Level3.prototype.detenerMonedasOleada = function () {
+
+	if (this._timerMonedasOleada) {
+		this._timerMonedasOleada.destroy();
+		this._timerMonedasOleada = null;
+	}
+
+	this._monedasOleadaActiva = false;
+
+};
+
+Level3.prototype.contarMonedasEscena = function () {
+
+	var activas = 0;
+	var i;
+	var moneda;
+
+	for (i = 0; i < this.fCoins.children.length; i++) {
+		moneda = this.fCoins.children[i];
+		if (moneda.monedaEscena) {
+			activas++;
+		}
+	}
+
+	return activas;
+
+};
+
+Level3.prototype.spawnMonedaEscena = function () {
+
+	if (!this._monedasOleadaActiva || !this.fPlatforms || !this.fPlatforms.children.length) {
+		return;
+	}
+
+	var dificultad = this.dificultadActual || this.calcularDificultadNoche();
+
+	if (this.contarMonedasEscena() >= dificultad.monedasActivasMax) {
+		return;
+	}
+
+	var randomPlatform = Math.floor(Math.random() * this.fPlatforms.children.length);
+	var platform = this.fPlatforms.children[randomPlatform];
+
+	if (platform.data.name === 'topCeil') {
+		platform = this.fFloorNew;
+	}
+
+	var xCoinPos = Math.random() * this.game.width;
+
+	if (xCoinPos < 100 || xCoinPos > 540) {
+		xCoinPos = this.game.width / 2;
+	}
+
+	var _coin = new coin(this.game, xCoinPos, platform.world.y - 20);
+	_coin.monedaEscena = true;
+	_coin.timed();
+	this.fCoins.add(_coin);
+
+};
+
+Level3.prototype.programarSiguienteMoneda = function () {
+
+	if (!this._monedasOleadaActiva) {
+		return;
+	}
+
+	var dificultad = this.dificultadActual || this.calcularDificultadNoche();
+	var rango = dificultad.intervaloMonedasMax - dificultad.intervaloMonedasMin;
+	var delay = dificultad.intervaloMonedasMin + Math.floor(Math.random() * (rango + 1));
+
+	if (this._timerMonedasOleada) {
+		this._timerMonedasOleada.destroy();
+	}
+
+	this._timerMonedasOleada = this.game.time.create(false);
+	this._timerMonedasOleada.add(delay, function () {
+		this.spawnMonedaEscena();
+		this.programarSiguienteMoneda();
+	}, this);
+	this._timerMonedasOleada.start();
+
+};
+
 Level3.prototype.randomCoins = function (estado) {
 
-	console.log('generando monedas');
-if(estado){
-	randomTime =  Math.ceil(Math.random()*10)*1000;
-	if(randomTime<5000){
-		randomTime =  5000;
+	if (estado) {
+		this.detenerMonedasOleada();
+		this._monedasOleadaActiva = true;
+
+		var dificultad = this.dificultadActual || this.calcularDificultadNoche();
+		var primerDelay = Math.round(dificultad.intervaloMonedasMin * 0.35);
+
+		this._timerMonedasOleada = this.game.time.create(false);
+		this._timerMonedasOleada.add(primerDelay, function () {
+			this.spawnMonedaEscena();
+			this.programarSiguienteMoneda();
+		}, this);
+		this._timerMonedasOleada.start();
+	} else {
+		this.detenerMonedasOleada();
 	}
- var timer = this.game.time.create(false);
 
-
-    timer.loop(randomTime, function(){
-
-    	var randomPlatform = Math.ceil(Math.random()*this.state.getCurrentState().fPlatforms.length-1);
-    	var platform = this.state.getCurrentState().fPlatforms.children[randomPlatform];
-    
-    	if(platform.data.name == "topCeil"){
-    		platform = this.fFloorNew;
-    	}
-    	console.log(randomPlatform);
-    	xCoinPos = Math.random()*this.game.width;
-
-    	if(xCoinPos<100 || xCoinPos>540){
-
-    		xCoinPos = this.game.width/2;
-    	}
-
-    	var _coin = new coin(this.game,xCoinPos , platform.world.y-20);
-    	_coin.timed();
-		this.fCoins.add(_coin);
-		timer.destroy();
-    }, this);
-
-
-    timer.start();
-
-}
-
-
-	
 }
 
 Level3.prototype.enterStore = function (player,store) {
@@ -3288,7 +3676,7 @@ Level3.prototype.buyGun = function () {
 		gunReload.play('gunReload');
 		this.fShootBtn.visible =  true;
 		this.fPlayer.hasPistol = true;
-		this.fPlayer.myCoins-=10;
+		this.fPlayer.myCoins -= Number(this.fGunValue.text);
 		this.fPlayer.myWeapons++;
 		}
 	}
@@ -3559,10 +3947,27 @@ Level3.prototype.eatGirl = function (cannon, platform) {
 
 Level3.prototype.update = function () {
 
+	if (this._placedCannonsPendientes) {
+		this.restaurarCannonsColocados(this._placedCannonsPendientes);
+		this._placedCannonsPendientes = null;
+	}
+
 	this.fUpgradeCost.visible = false;
 	this.fClientsRemain.text = Math.max(0, this.ClientesPorAtender - this.clientesYaAtendidos); //contador de clientes por atender
 	this.fYourMoney.text = this.fPlayer.myCoins;
 	this.fMoneyCount.text = this.fPlayer.myCoins;
+
+	if (!this._saveTimer) {
+		this._saveTimer = 0;
+	}
+
+	this._saveTimer += this.game.time.elapsed || 0;
+
+	if (this._saveTimer >= 2000 && this.necesitaGuardarProgreso()) {
+		this.guardarProgreso();
+		this._saveTimer = 0;
+	}
+
 	this.houseColliding = this.game.physics.arcade.overlap(this.fPlayer , this.fStore, this.enterStore, null, this);
 	this.elevatorColliding =this.game.physics.arcade.collide(this.fAscensor1 , this.fPlayer, this.elevatorAction, null, this);
 	this.ladderCollider = this.game.physics.arcade.overlap(this.fPlayer , this.fEscaleras);
@@ -3608,6 +4013,13 @@ if(this.doingOrder){
 if(this.siguienteFaseClientes && this.siguienteFaseZombies){ //preparar siguiente nivel
 	
 	this.level++;
+
+	if (this.fOleadaNumero) {
+		this.fOleadaNumero.text = String(this.level);
+	}
+
+	this.aplicarCostosTiendaPorNivel();
+	this.guardarProgreso();
 
 	this.siguienteFaseZombies = false;
 	this.siguienteFaseClientes = false;

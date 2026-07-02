@@ -9,6 +9,7 @@ var height = 960 ;
 	console.log("largo "  + width + " ancho " + height);
 	  
 	var game = new Phaser.Game(width,height, Phaser.CANVAS);
+	window.game = game;
 	
 
 	function Boot() {
